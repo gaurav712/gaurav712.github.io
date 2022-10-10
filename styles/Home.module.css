@@ -7,6 +7,7 @@
 }
 
 .navbar ul li {
+  cursor: pointer;
   margin: 0.5rem 1rem;
 }
 
