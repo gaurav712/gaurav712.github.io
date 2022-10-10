@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import styles from "../styles/Home.module.css";
+import styles from "./styles.module.css";
 
 const NavBarItem = ({
   label,
