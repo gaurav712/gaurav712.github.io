@@ -4,6 +4,7 @@ const Document = () => {
   return (
     <Html>
       <Head>
+        <title>Gaurav Kumar Yadav</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
           rel="stylesheet"
