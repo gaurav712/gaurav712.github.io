@@ -17,9 +17,9 @@ const Home = () => {
           />
         </div>
         <div className={styles.greetingContainer}>
-          <div className={styles.greeting}>Hello</div>
+          <div className={styles.greeting}>Hello!</div>
           <div className={styles.greetingSub}>
-            A Software Engineer based in UP, IN
+            I'm a Software Engineer based in UP, IN
           </div>
         </div>
       </div>

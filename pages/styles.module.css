@@ -16,13 +16,13 @@
 }
 
 .greeting {
-  margin: 0.5rem auto;
-  width: 90%;
+  margin: 0 auto;
+  font-family: Pacifico;
+  font-size: 3rem;
 }
 
 .greetingSub {
-  width: 90%;
-  margin: 0.5rem auto;
+  margin: 0 auto;
 }
 
 .avatarContainer {
@@ -58,5 +58,14 @@
   .greeting,
   .greetingSub {
     width: 80%;
+  }
+
+  .greeting {
+    font-size: 4rem;
+  }
+
+  .greetingSub {
+    font-size: 1.5rem;
+    opacity: 0.75;
   }
 }
