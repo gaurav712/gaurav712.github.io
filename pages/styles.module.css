@@ -2,28 +2,6 @@
   padding: 0 2rem;
 }
 
-.navbar ul {
-  display: flex;
-}
-
-.navbar ul li {
-  cursor: pointer;
-  margin: 0.5rem 1rem;
-}
-
-.navbarItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dot {
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 0.25rem;
-  background-color: white;
-}
-
 .main {
   min-height: 100vh;
   padding: 4rem 0;
