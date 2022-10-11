@@ -1,4 +1,11 @@
 import styles from "./styles.module.css";
+import { INavBarEntries } from "./types";
+
+const NavBarEntries: INavBarEntries = {
+  Me: "/",
+  More: "/more",
+  Projects: "/projects",
+};
 
 const NavBarItem = ({
   label,
@@ -9,20 +16,18 @@ const NavBarItem = ({
 }) => {
   return (
     <div className={styles.navbarItem}>
-      <a href={`/${label.toLowerCase()}`}>{label}</a>
+      <a href={NavBarEntries[label]}>{label}</a>
       {label === selectedItem ? <div className={styles.dot}></div> : null}
     </div>
   );
 };
-
-const NavBarEntries = ["Me", "More", "Projects"];
 
 const NavBar = ({ selectedItem }: { selectedItem: string }) => {
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
         <ul>
-          {NavBarEntries.map((label, key) => (
+          {Object.keys(NavBarEntries).map((label, key) => (
             <NavBarItem key={key} label={label} selectedItem={selectedItem} />
           ))}
         </ul>
