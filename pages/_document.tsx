@@ -5,6 +5,7 @@ const Document = () => {
     <Html>
       <Head>
         <title>Gaurav Kumar Yadav</title>
+        <link rel="shortcut icon" href="/favicon.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
           rel="stylesheet"
