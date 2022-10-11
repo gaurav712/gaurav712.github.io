@@ -8,6 +8,9 @@ const More = () => {
   return (
     <div className={styles.container}>
       <NavBar selectedItem={selectedItem.current} />
+      <div className={styles.main}>
+        <div className={styles.pendingText}>Under Development</div>
+      </div>
     </div>
   );
 };
