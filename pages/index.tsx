@@ -15,11 +15,7 @@ const Home = () => {
         <NavBar selectedItem={selectedItem.current} />
         <div className={styles.infoContainer}>
           <div className={styles.avatarContainer}>
-            <img
-              src={"https://avatars.githubusercontent.com/u/45332121"}
-              className={styles.avatar}
-              alt=""
-            />
+            <img src={"/image.png"} className={styles.avatar} alt="" />
           </div>
           <div className={styles.greetingContainer}>
             <div className={styles.greeting}>Hello!</div>
