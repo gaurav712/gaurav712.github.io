@@ -34,8 +34,8 @@
 }
 
 .avatarBackground {
-  width: 70%;
-  opacity: 0.5;
+  width: 95%;
+  opacity: 0.8;
 }
 
 .avatar {
@@ -46,19 +46,39 @@
   z-index: 100;
 }
 
+@media only screen and (min-width: 500px) {
+  .avatarBackground {
+    width: 80%;
+  }
+
+  .greeting {
+    font-size: 3.5rem;
+  }
+
+  .greetingSub {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .avatarBackground {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .avatar {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .infoContainer {
     min-height: calc(100vh - 5rem);
     max-width: 1400px;
     margin: 0 auto;
     flex-direction: row-reverse;
-  }
-
-  /*.avatarContainer {}*/
-
-  .avatar {
-    width: 12rem;
-    height: 12rem;
   }
 
   .greeting,
