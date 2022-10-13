@@ -33,7 +33,13 @@
   width: 100%;
 }
 
+.avatarBackground {
+  width: 70%;
+  opacity: 0.5;
+}
+
 .avatar {
+  position: absolute;
   height: 8rem;
   width: 8rem;
   object-fit: contain;
