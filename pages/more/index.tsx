@@ -13,8 +13,19 @@ const More = () => {
       </Head>
       <div className={styles.container}>
         <NavBar selectedItem={selectedItem.current} />
-        <div className={styles.main}>
-          <div className={styles.pendingText}>Under Development</div>
+        <div className={styles.infoContainer}>
+          <div className={styles.detailsContainer}>
+            <div className={styles.contactInfoContainer}>Something</div>
+            <div className={styles.skillsInfoContainer}>Something Else</div>
+          </div>
+          <div className={styles.avatarContainer}>
+            <img
+              src={"/technologies.svg"}
+              className={styles.avatarBackground}
+              alt=""
+            />
+            <img src={"/image.png"} className={styles.avatar} alt="" />
+          </div>
         </div>
       </div>
     </>
