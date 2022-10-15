@@ -74,13 +74,6 @@
   }
 }
 
-@media only screen and (min-width: 950px) {
-  .avatar {
-    width: 10rem;
-    height: 10rem;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .infoContainer {
     min-height: calc(100vh - 5rem);
@@ -105,5 +98,12 @@
   .greetingSub {
     font-size: 1.5rem;
     opacity: 0.75;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .avatar {
+    width: 10rem;
+    height: 10rem;
   }
 }
