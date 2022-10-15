@@ -41,8 +41,8 @@
 
 .avatar {
   position: absolute;
-  height: 8rem;
-  width: 8rem;
+  height: 7rem;
+  width: 7rem;
   object-fit: contain;
   z-index: 100;
 }
