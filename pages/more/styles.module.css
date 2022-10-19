@@ -15,14 +15,77 @@
   width: 100%;
 }
 
-.skillsInfoContainer,
 .contactInfoContainer {
+  color: #ccc;
   margin: 0 auto;
   width: 100%;
 }
 
 .avatarContainer {
   display: none;
+}
+
+.arrows {
+  display: none;
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 3px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari and Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari and Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari and Chrome */
 }
 
 @media only screen and (min-width: 500px) {
@@ -53,7 +116,33 @@
   }
 
   .detailsContainer {
+    position: relative;
     height: 75vh;
+    padding: 0.5rem 0;
+  }
+
+  .topCascadingBar,
+  .bottomCascadingBar {
+    height: 2.25rem;
+    position: absolute;
+    top: 0;
+    background-color: #000000;
+    width: 100%;
+    filter: blur(15px);
+    opacity: 0.9;
+  }
+
+  .arrows {
+    display: unset;
+  }
+
+  .bottomCascadingBar {
+    top: unset;
+    bottom: 0;
+  }
+
+  .contactInfoContainer {
+    padding: 1rem;
     overflow-y: scroll;
   }
 
