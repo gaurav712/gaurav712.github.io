@@ -15,12 +15,10 @@
   width: 100%;
 }
 
+.skillsInfoContainer,
 .contactInfoContainer {
   margin: 0 auto;
-}
-
-.skillsInfoContainer {
-  margin: 0 auto;
+  width: 100%;
 }
 
 .avatarContainer {
@@ -55,14 +53,8 @@
   }
 
   .detailsContainer {
-    height: auto;
-    max-height: 75vh;
+    height: 75vh;
     overflow-y: scroll;
-  }
-
-  .contactInfoContainer,
-  .skillsInfoContainer {
-    width: 80%;
   }
 
   .avatarContainer {
