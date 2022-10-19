@@ -18,25 +18,88 @@ const More = () => {
       </Head>
       <div className={styles.container}>
         <NavBar selectedItem={selectedItem.current} />
-        <div className={styles.infoContainer}>
+        <div className={styles.parentContainer}>
           <div className={styles.detailsContainer}>
             <div className={styles.topCascadingBar} />
-            <div
-              className={styles.contactInfoContainer}
-              onScroll={handleScroll}
-            >
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-              </p>
+            <div className={styles.infoContainer} onScroll={handleScroll}>
+              <div className={styles.basicInfoContainer}>
+                <div className={styles.headingText}>About</div>
+                <div className={styles.infoContentContainer}>
+                  <p>Hello! I&#39;m Gaurav Kumar Yadav from UP, IN.</p>
+                  <p>
+                    I&#39;m currently working as a Frontend Developer. I do
+                    React Native for the most of it.
+                  </p>
+                  <p>
+                    I&#39;m passionate about anything &#39;Computers&#39;, since
+                    my middle-school days. Apart from my day job, I usually
+                    explore new things, anything I can find. The thing that
+                    interests me the most, is GAMES!!! Games all the way!
+                  </p>
+                </div>
+              </div>
+              <div className={styles.skillsInfoContainer}>
+                <div className={styles.headingText}>Skills</div>
+                <div className={styles.infoContentContainer}>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/smartphone.svg" />
+                    <span>React Native, Android(Kotlin), iOS(Swift)</span>
+                  </div>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/pencil.svg" />
+                    <span>ReactJS, HTML, CSS, JS</span>
+                  </div>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/cpu.svg" />
+                    <span>C/C++, Go, Rust</span>
+                  </div>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/gamepad.svg" />
+                    <span>Godot, Blender, Unreal Engine</span>
+                  </div>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/server.svg" />
+                    <span>ExpressJS</span>
+                  </div>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/database.svg" />
+                    <span>MySQL, MongoDB, Firebase</span>
+                  </div>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/terminal.svg" />
+                    <span>Linux, MacOS, FreeBSD, Windows</span>
+                  </div>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/misc.svg" />
+                    <span>Python, TypeScript, GIMP, Vim</span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.contactInfoContainer}>
+                <div className={styles.headingText}>Reach me &#64;</div>
+                <div className={styles.infoContentContainer}>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/mail.svg" />
+                    <span>
+                      <a href="mailto:gaurav712@protonmail.com">
+                        gaurav712@protonmail.com
+                      </a>
+                    </span>
+                  </div>
+                  <div className={styles.contentListEntry}>
+                    <img className={styles.icon} src="/linkedin.svg" />
+                    <span>
+                      <a
+                        target={"_blank"}
+                        rel="noreferrer"
+                        href="https://www.linkedin.com/in/gaurav712"
+                      >
+                        gaurav712
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className={styles.bottomCascadingBar} />
             {showScrollIndicator ? (

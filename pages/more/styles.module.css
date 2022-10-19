@@ -2,7 +2,7 @@
   padding: 0 2rem;
 }
 
-.infoContainer {
+.parentContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,10 +15,33 @@
   width: 100%;
 }
 
-.contactInfoContainer {
+.infoContainer {
   color: #ccc;
   margin: 0 auto;
   width: 100%;
+}
+
+.infoContentContainer div {
+  margin: 1rem 0;
+}
+
+.headingText {
+  margin-top: 1rem;
+  font-family: Pacifico;
+  font-size: 2rem;
+  border-bottom: 0.5px solid gray;
+}
+
+.contentListEntry {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: inline;
+  height: 1.5rem;
+  object-fit: contain;
+  margin-right: 1rem;
 }
 
 .avatarContainer {
@@ -108,7 +131,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .infoContainer {
+  .parentContainer {
     min-height: calc(100vh - 5rem);
     max-width: 1400px;
     margin: 0 auto;
@@ -141,7 +164,7 @@
     bottom: 0;
   }
 
-  .contactInfoContainer {
+  .infoContainer {
     padding: 1rem;
     overflow-y: scroll;
   }
