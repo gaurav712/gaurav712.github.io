@@ -13,9 +13,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
-  max-height: 75vh;
-  overflow-y: scroll;
 }
 
 .contactInfoContainer {
@@ -55,6 +52,12 @@
     max-width: 1400px;
     margin: 0 auto;
     flex-direction: row;
+  }
+
+  .detailsContainer {
+    height: auto;
+    max-height: 75vh;
+    overflow-y: scroll;
   }
 
   .contactInfoContainer,
