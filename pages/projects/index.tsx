@@ -14,7 +14,14 @@ const Projects = () => {
       <div className={styles.container}>
         <NavBar selectedItem={selectedItem.current} />
         <div className={styles.main}>
-          <div className={styles.pendingText}>Under Development</div>
+          <div className={styles.websiteInfoContainer}>
+            <div className={styles.projectTitle}>The Website</div>
+            <div className={styles.additionalInfo}>
+              <span className={styles.additionalInfoHeading}>Tech</span>
+              <span className={styles.additionalInfoText}>NextJS</span>
+            </div>
+          </div>
+          <div className={styles.projectsList}></div>
         </div>
       </div>
     </>

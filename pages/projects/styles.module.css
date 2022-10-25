@@ -1,10 +1,9 @@
 .main {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.pendingText {
-  font-size: 1.75rem;
+@media only screen and (min-width: 768px) {
+  .main {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
