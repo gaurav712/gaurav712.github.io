@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>My Works</title>
+        <title>My Work</title>
       </Head>
       <div className={styles.container}>
         <NavBar selectedItem={selectedItem.current} />
