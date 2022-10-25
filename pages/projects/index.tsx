@@ -15,10 +15,27 @@ const Projects = () => {
         <NavBar selectedItem={selectedItem.current} />
         <div className={styles.main}>
           <div className={styles.websiteInfoContainer}>
-            <div className={styles.projectTitle}>The Website</div>
+            <div className={styles.projectTitle}>The Portfolio</div>
             <div className={styles.additionalInfo}>
-              <span className={styles.additionalInfoHeading}>Tech</span>
-              <span className={styles.additionalInfoText}>NextJS</span>
+              <div className={styles.techUsedInfo}>
+                <img src="/nextjs.svg" className={styles.logo} />
+              </div>
+              <div className={styles.additionalInfoText}>
+                Uses grayscale color palette, intended to be <b>simple</b> yet{" "}
+                <i>informative</i>, <b>monochrome</b> yet <i>flashy enough</i>,{" "}
+                <b>barebones</b> yet <i>responsive</i>.
+              </div>
+              <div className={styles.techUsedInfo}>
+                <img src="/github.svg" className={styles.githubLogo} />
+                <a
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className={styles.sourceUrl}
+                  href="https://github.com/gaurav712.github.io"
+                >
+                  https://github.com/gaurav712.github.io
+                </a>
+              </div>
             </div>
           </div>
           <div className={styles.projectsList}></div>

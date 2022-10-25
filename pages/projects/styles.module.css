@@ -1,4 +1,46 @@
 .main {
+  padding: 0 2rem;
+}
+
+.websiteInfoContainer {
+  /*width: max-content;*/
+  /*margin: 0 auto;*/
+}
+
+.projectTitle {
+  font-family: Pacifico;
+}
+
+.techUsedInfo {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem auto;
+}
+
+.logo,
+.githubLogo {
+  height: 2rem;
+  width: 2rem;
+  object-fit: contain;
+  margin-right: 0.5rem;
+}
+
+.githubLogo {
+  height: 1rem;
+  width: 1rem;
+}
+
+.additionalInfoText {
+  color: #ccc;
+}
+
+.additionalInfoText b {
+  color: #fff;
+}
+
+.sourceUrl {
+  font-size: 0.85rem;
+  color: #ccc;
 }
 
 @media only screen and (min-width: 768px) {
