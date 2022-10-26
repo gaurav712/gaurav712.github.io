@@ -38,7 +38,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className={styles.projectsList}></div>
+          <div className={styles.projectsList}>
+            <div className={styles.projectInfoContainer}>Hello</div>
+            <div className={styles.projectInfoContainer}>Hello</div>
+            <div className={styles.projectInfoContainer}>Hello</div>
+            <div className={styles.projectInfoContainer}>Hello</div>
+          </div>
         </div>
       </div>
     </>
