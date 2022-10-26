@@ -2,11 +2,6 @@
   padding: 0 2rem;
 }
 
-.websiteInfoContainer {
-  /*width: max-content;*/
-  /*margin: 0 auto;*/
-}
-
 .projectTitle {
   font-family: Pacifico;
 }
@@ -46,6 +41,11 @@
 @media only screen and (min-width: 768px) {
   .main {
     max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .websiteInfoContainer {
+    width: 70%;
     margin: 0 auto;
   }
 }
