@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useRef } from "react";
 import NavBar from "../../components/NavBar";
+import { projects } from "../../data";
 import styles from "./styles.module.css";
 
 const Projects = () => {
@@ -39,10 +40,33 @@ const Projects = () => {
             </div>
           </div>
           <div className={styles.projectsList}>
-            <div className={styles.projectInfoContainer}>Hello</div>
-            <div className={styles.projectInfoContainer}>Hello</div>
-            <div className={styles.projectInfoContainer}>Hello</div>
-            <div className={styles.projectInfoContainer}>Hello</div>
+            {projects.map((item, index) => (
+              <div key={`${index}`} className={styles.projectInfoContainer}>
+                <div className={styles.projectTitle}>{item.name}</div>
+                <div className={styles.additionalInfo}>
+                  <div className={styles.techUsedInfo}>
+                    {item.techUsed.map((tech, index) => (
+                      <span key={`${index}`}>{tech}</span>
+                    ))}
+                  </div>
+                  <div
+                    className={styles.additionalInfoText}
+                    dangerouslySetInnerHTML={{ __html: item.description }}
+                  />
+                </div>
+                <div className={styles.techUsedInfo}>
+                  <img src="/github.svg" className={styles.githubLogo} />
+                  <a
+                    target={"_blank"}
+                    rel="noreferrer"
+                    className={styles.sourceUrl}
+                    href={item.sourceUrl}
+                  >
+                    {item.sourceUrl}
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
