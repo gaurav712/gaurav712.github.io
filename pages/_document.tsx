@@ -6,7 +6,7 @@ const Document = () => {
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=VT323&display=swap"
           rel="stylesheet"
         />
       </Head>
