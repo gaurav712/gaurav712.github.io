@@ -3,6 +3,7 @@
 }
 
 .projectsList {
+  border-top: 1px solid gray;
   display: grid;
   margin-top: 2.5rem;
   grid-template-columns: 1fr;
