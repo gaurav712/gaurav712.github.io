@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRef } from "react";
 import NavBar from "../../components/NavBar";
-import { projects } from "../../data";
+import { projects, techIcons } from "../../data";
 import styles from "./styles.module.css";
 
 const Projects = () => {
@@ -46,7 +46,9 @@ const Projects = () => {
                 <div className={styles.additionalInfo}>
                   <div className={styles.techUsedInfo}>
                     {item.techUsed.map((tech, index) => (
-                      <span key={`${index}`}>{tech}</span>
+                      <span key={`${index}`}>
+                        <img src={techIcons[tech]} className={styles.logo} />
+                      </span>
                     ))}
                   </div>
                   <div

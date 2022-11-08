@@ -1,3 +1,13 @@
+import { ITechIcons } from "./types";
+
+export const techIcons: ITechIcons = {
+  c: "/c.svg",
+  python: "/python.svg",
+  kotlin: "/kotlin.svg",
+  android: "/android.svg",
+  sdl: "/sdl.svg",
+};
+
 export const projects = [
   {
     name: "status",
