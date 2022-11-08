@@ -27,8 +27,8 @@
 
 .logo,
 .githubLogo {
-  height: 2rem;
-  width: 2rem;
+  height: 1.75rem;
+  width: 1.75rem;
   object-fit: contain;
   margin-right: 0.5rem;
 }
