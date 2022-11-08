@@ -32,9 +32,9 @@ const Projects = () => {
                   target={"_blank"}
                   rel="noreferrer"
                   className={styles.sourceUrl}
-                  href="https://github.com/gaurav712.github.io"
+                  href="https://github.com/gaurav712/gaurav712.github.io"
                 >
-                  https://github.com/gaurav712.github.io
+                  https://github.com/gaurav712/gaurav712.github.io
                 </a>
               </div>
             </div>
