@@ -20,6 +20,7 @@ const Projects = () => {
             <div className={styles.additionalInfo}>
               <div className={styles.techUsedInfo}>
                 <img src="/nextjs.svg" className={styles.logo} />
+                <img src="/typescript.svg" className={styles.logo} />
               </div>
               <div className={styles.additionalInfoText}>
                 Uses grayscale color palette, intended to be <b>simple</b> yet{" "}
