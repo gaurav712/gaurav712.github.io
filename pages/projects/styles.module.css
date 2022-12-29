@@ -1,12 +1,13 @@
 .main {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .projectsList {
   border-top: 1px solid gray;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 2.5rem;
-  grid-template-columns: 1fr;
 }
 
 .projectInfoContainer {
@@ -17,6 +18,7 @@
 .projectTitle {
   font-family: VT323;
   font-size: 1.75rem;
+  max-width: 100%;
 }
 
 .techUsedInfo {
@@ -56,6 +58,7 @@
   .main {
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 2rem;
   }
 
   .websiteInfoContainer {
@@ -64,6 +67,7 @@
   }
 
   .projectsList {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
