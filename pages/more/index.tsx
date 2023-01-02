@@ -27,14 +27,15 @@ const More = () => {
                 <div className={styles.infoContentContainer}>
                   <p>Hello! I&#39;m Gaurav Kumar Yadav from UP, IN.</p>
                   <p>
-                    I&#39;m currently working as a Frontend Developer. I do
-                    React Native for the most of it.
+                    Currently a Frontend Developer. I do React(Native) for the
+                    most part. It's &#39;systems programming&#39; when off the
+                    day-job.
                   </p>
                   <p>
-                    I&#39;m passionate about anything &#39;Computers&#39;, since
-                    my middle-school days. Apart from my day job, I usually
-                    explore new things, anything I can find. The thing that
-                    interests me the most, is GAMES!!! Games all the way!
+                    Passionate about &#39;tech&#39;, obviously, ever since
+                    school. Exploring new things thrills me, anything I can
+                    find. What interests me the most is video games, whether
+                    it's playing, designing... ANYTHING GAMES!!
                   </p>
                 </div>
               </div>
