@@ -28,14 +28,14 @@ const More = () => {
                   <p>Hello! I&#39;m Gaurav Kumar Yadav from UP, IN.</p>
                   <p>
                     Currently a Frontend Developer. I do React(Native) for the
-                    most part. It's &#39;systems programming&#39; when off the
-                    day-job.
+                    most part. It&#39;s &#39;systems programming&#39; when off
+                    the day-job.
                   </p>
                   <p>
                     Passionate about &#39;tech&#39;, obviously, ever since
                     school. Exploring new things thrills me, anything I can
                     find. What interests me the most is video games, whether
-                    it's playing, designing... ANYTHING GAMES!!
+                    it&#39;s playing, designing... ANYTHING GAMES!!
                   </p>
                 </div>
               </div>
