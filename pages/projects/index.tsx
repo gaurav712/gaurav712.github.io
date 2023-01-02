@@ -19,8 +19,14 @@ const Projects = () => {
             <div className={styles.projectTitle}>The Portfolio</div>
             <div className={styles.additionalInfo}>
               <div className={styles.techUsedInfo}>
-                <img src="/nextjs.svg" className={styles.logo} />
-                <img src="/typescript.svg" className={styles.logo} />
+                <span className={styles.tooltip}>
+                  <img src="/nextjs.svg" className={styles.logo} />
+                  <span className={styles.tooltipText}>{"NextJS"}</span>
+                </span>
+                <span className={styles.tooltip}>
+                  <img src="/typescript.svg" className={styles.logo} />
+                  <span className={styles.tooltipText}>{"TypeScript"}</span>
+                </span>
               </div>
               <div className={styles.additionalInfoText}>
                 Uses grayscale color palette, intended to be <b>simple</b> yet{" "}
@@ -47,8 +53,14 @@ const Projects = () => {
                 <div className={styles.additionalInfo}>
                   <div className={styles.techUsedInfo}>
                     {item.techUsed.map((tech, index) => (
-                      <span key={`${index}`}>
-                        <img src={techIcons[tech]} className={styles.logo} />
+                      <span key={`${index}`} className={styles.tooltip}>
+                        <img
+                          src={techIcons[tech].iconSource}
+                          className={styles.logo}
+                        />
+                        <span className={styles.tooltipText}>
+                          {techIcons[tech].tooltipText}
+                        </span>
                       </span>
                     ))}
                   </div>

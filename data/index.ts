@@ -1,17 +1,50 @@
 import { ITechIcons } from "./types";
 
 export const techIcons: ITechIcons = {
-  c: "/c.svg",
-  cpp: "/cpp.svg",
-  python: "/python.svg",
-  kotlin: "/kotlin.svg",
-  android: "/android.svg",
-  sdl: "/sdl.svg",
-  react_native: "/react.svg",
-  typescript: "/typescript.svg",
-  gtk: "/gtk.svg",
-  qt: "/qt.svg",
-  javascript: "/javascript.svg",
+  c: {
+    iconSource: "/c.svg",
+    tooltipText: "C",
+  },
+  cpp: {
+    iconSource: "/cpp.svg",
+    tooltipText: "C++",
+  },
+  python: {
+    iconSource: "/python.svg",
+    tooltipText: "Python",
+  },
+  kotlin: {
+    iconSource: "/kotlin.svg",
+    tooltipText: "Kotlin",
+  },
+  android: {
+    iconSource: "/android.svg",
+    tooltipText: "Android",
+  },
+  sdl: {
+    iconSource: "/sdl.svg",
+    tooltipText: "Simple Direct Media Layer (SDL)",
+  },
+  react_native: {
+    iconSource: "/react.svg",
+    tooltipText: "React Native",
+  },
+  typescript: {
+    iconSource: "/typescript.svg",
+    tooltipText: "TypeScript",
+  },
+  gtk: {
+    iconSource: "/gtk.svg",
+    tooltipText: "Gnome ToolKit (GTK)",
+  },
+  qt: {
+    iconSource: "/qt.svg",
+    tooltipText: "Qt",
+  },
+  javascript: {
+    iconSource: "/javascript.svg",
+    tooltipText: "JavaScript",
+  },
 };
 
 export const projects = [

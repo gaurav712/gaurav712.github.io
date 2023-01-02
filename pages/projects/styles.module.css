@@ -34,6 +34,7 @@
   object-fit: contain;
   margin-right: 0.5rem;
   filter: grayscale(1);
+  cursor: pointer;
 }
 
 .githubLogo {
@@ -52,6 +53,32 @@
 .sourceUrl {
   font-size: 0.85rem;
   color: #ccc;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltipText {
+  visibility: hidden;
+  width: 8rem;
+  background-color: #45403d;
+  color: #ddd;
+  text-align: center;
+  padding: 0.25rem;
+  border-radius: 6px;
+
+  /* tooltip position */
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
 }
 
 @media only screen and (min-width: 768px) {

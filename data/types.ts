@@ -1,3 +1,6 @@
 export interface ITechIcons {
-  [key: string]: string;
+  [key: string]: {
+    iconSource: string;
+    tooltipText: string;
+  };
 }
