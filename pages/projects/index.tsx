@@ -20,12 +20,22 @@ const Projects = () => {
             <div className={styles.additionalInfo}>
               <div className={styles.techUsedInfo}>
                 <span className={styles.tooltip}>
-                  <img src="/nextjs.svg" className={styles.logo} />
-                  <span className={styles.tooltipText}>{"NextJS"}</span>
+                  <img
+                    src={techIcons.nextjs.iconSource}
+                    className={styles.logo}
+                  />
+                  <span className={styles.tooltipText}>
+                    {techIcons.nextjs.tooltipText}
+                  </span>
                 </span>
                 <span className={styles.tooltip}>
-                  <img src="/typescript.svg" className={styles.logo} />
-                  <span className={styles.tooltipText}>{"TypeScript"}</span>
+                  <img
+                    src={techIcons.typescript.iconSource}
+                    className={styles.logo}
+                  />
+                  <span className={styles.tooltipText}>
+                    {techIcons.typescript.tooltipText}
+                  </span>
                 </span>
               </div>
               <div className={styles.additionalInfoText}>
