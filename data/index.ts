@@ -45,9 +45,20 @@ export const techIcons: ITechIcons = {
     iconSource: "/javascript.svg",
     tooltipText: "JavaScript",
   },
+  nextjs: {
+    iconSource: "/nextjs.svg",
+    tooltipText: "NextJS",
+  },
 };
 
 export const projects = [
+  {
+    name: "AKTU Exam Preparation",
+    techUsed: ["nextjs", "typescript"],
+    description:
+      "A website to help AKTU students to prepare for exams, providing them with concise guides on subjects.",
+    sourceUrl: "https://gaurav712.github.io/aep",
+  },
   {
     name: "RN OpenStreetMaps",
     techUsed: ["react_native", "typescript"],
