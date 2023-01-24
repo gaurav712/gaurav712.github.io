@@ -25,6 +25,10 @@ export const techIcons: ITechIcons = {
     iconSource: "/sdl.svg",
     tooltipText: "Simple Direct Media Layer (SDL)",
   },
+  react: {
+    iconSource: "/react.svg",
+    tooltipText: "React",
+  },
   react_native: {
     iconSource: "/react.svg",
     tooltipText: "React Native",
@@ -78,6 +82,13 @@ export const projects = [
     description:
       "An app to reserve slots for public custom rooms in battle royales",
     sourceUrl: "https://github.com/gaurav712/BGMICustoms",
+  },
+  {
+    name: "REC Sonbhadra Official Website",
+    techUsed: ["react", "javascript"],
+    description:
+      "The official webiste for Rajkiya Engg. College, Sonbhadra. It's changed a lot since I and my friend crated and hosted it.",
+    sourceUrl: "http://recsonbhadra.ac.in",
   },
   {
     name: "status",
