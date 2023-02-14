@@ -5,8 +5,9 @@ const Document = () => {
     <Html lang="en">
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="preconnect" href="https://fonts.bunny.net" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=VT323&display=swap"
+          href="https://fonts.bunny.net/css?family=lato:400|pacifico:400|vt323:400"
           rel="stylesheet"
         />
       </Head>
