@@ -53,9 +53,23 @@ export const techIcons: ITechIcons = {
     iconSource: "/nextjs.svg",
     tooltipText: "NextJS",
   },
+  aws: {
+    iconSource: "/aws.svg",
+    tooltipText: "Amazon Web Services",
+  },
+  google_maps: {
+    iconSource: "/google_maps.svg",
+    tooltipText: "Google Maps",
+  },
 };
 
 export const projects = [
+  {
+    name: "DynamoDB-Stream-Changes",
+    techUsed: ["react_native", "python", "aws", "google_maps"],
+    description:
+      "An android application to update markers on a map in real-time as the list is updated in the database. Uses DynamoDB, GatewayAPI, Websockets, and AWS Lambda.",
+  },
   {
     name: "AKTU Exam Preparation",
     techUsed: ["nextjs", "typescript"],
