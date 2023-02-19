@@ -72,6 +72,12 @@ export const projects = [
     sourceUrl: "https://github.com/gaurav712/DynamoDB-Stream-Changes",
   },
   {
+    name: "ytmusic-cli",
+    techUsed: ["python"],
+    description: "Youtube Music frontend in console.",
+    sourceUrl: "https://github.com/gaurav712/ytmusic-cli",
+  },
+  {
     name: "AKTU Exam Preparation",
     techUsed: ["nextjs", "typescript"],
     description:
