@@ -69,6 +69,7 @@ export const projects = [
     techUsed: ["react_native", "python", "aws", "google_maps"],
     description:
       "An android application to update markers on a map in real-time as the list is updated in the database. Uses DynamoDB, GatewayAPI, Websockets, and AWS Lambda.",
+    sourceUrl: "https://github.com/gaurav712/DynamoDB-Stream-Changes",
   },
   {
     name: "AKTU Exam Preparation",
