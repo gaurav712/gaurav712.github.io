@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useRef } from "react";
+import { CSSProperties, useRef } from "react";
 import NavBar from "../../components/NavBar";
 import { projects, techIcons } from "../../data";
 import styles from "./styles.module.css";
@@ -8,7 +8,16 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { contentArrow, timelineContent } from "./timelineStyles";
+
+const timelineStyles: { [key: string]: CSSProperties } = {
+  timelineContent: {
+    backgroundColor: "#282828",
+    boxShadow: "none",
+  },
+  contentArrow: {
+    borderRightColor: "#282828",
+  },
+};
 
 const Projects = () => {
   const selectedItem = useRef("Projects");
@@ -68,8 +77,8 @@ const Projects = () => {
                 <VerticalTimelineElement
                   key={index}
                   date={`${index}`}
-                  contentStyle={timelineContent}
-                  contentArrowStyle={contentArrow}
+                  contentStyle={timelineStyles.timelineContent}
+                  contentArrowStyle={timelineStyles.contentArrow}
                 >
                   <div className={styles.projectInfoContainer}>
                     <div className={styles.projectTitle}>{item.name}</div>
