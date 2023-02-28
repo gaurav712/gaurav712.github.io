@@ -13,9 +13,17 @@ const timelineStyles: { [key: string]: CSSProperties } = {
   timelineContent: {
     backgroundColor: "#282828",
     boxShadow: "none",
+    top: "-20px",
   },
   contentArrow: {
     borderRightColor: "#282828",
+  },
+  timelineIcon: {
+    backgroundColor: "#fff",
+    width: "1.5rem",
+    height: "1.5rem",
+    boxShadow: "none !important",
+    marginLeft: "-0.75rem !important",
   },
 };
 
@@ -79,6 +87,7 @@ const Projects = () => {
                   date={`${index}`}
                   contentStyle={timelineStyles.timelineContent}
                   contentArrowStyle={timelineStyles.contentArrow}
+                  iconStyle={timelineStyles.timelineIcon}
                 >
                   <div className={styles.projectInfoContainer}>
                     <div className={styles.projectTitle}>{item.name}</div>
