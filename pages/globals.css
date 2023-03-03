@@ -26,3 +26,12 @@ body {
   color: white;
   background: black;
 }
+
+@media only screen and (max-width: 1170px) {
+  .vertical-timeline-element-icon {
+    margin-left: 0.5rem !important;
+  }
+  .vertical-timeline-element-content {
+    top: -12px !important;
+  }
+}

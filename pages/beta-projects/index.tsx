@@ -23,7 +23,7 @@ const timelineStyles: { [key: string]: CSSProperties } = {
     width: "1.5rem",
     height: "1.5rem",
     boxShadow: "none !important",
-    marginLeft: "-0.75rem !important",
+    marginLeft: "-0.75rem",
   },
 };
 
