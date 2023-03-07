@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { CSSProperties, useRef } from "react";
 import NavBar from "../../components/NavBar";
-import { projects, techIcons } from "../../data";
+import ProjectsList from "../../data/projects";
+import Icons from "../../data/icons";
 import styles from "./styles.module.css";
 import {
   VerticalTimeline,
@@ -43,21 +44,18 @@ const Projects = () => {
             <div className={styles.additionalInfo}>
               <div className={styles.techUsedInfo}>
                 <span className={styles.tooltip}>
-                  <img
-                    src={techIcons.nextjs.iconSource}
-                    className={styles.logo}
-                  />
+                  <img src={Icons.nextjs.iconSource} className={styles.logo} />
                   <span className={styles.tooltipText}>
-                    {techIcons.nextjs.tooltipText}
+                    {Icons.nextjs.tooltipText}
                   </span>
                 </span>
                 <span className={styles.tooltip}>
                   <img
-                    src={techIcons.typescript.iconSource}
+                    src={Icons.typescript.iconSource}
                     className={styles.logo}
                   />
                   <span className={styles.tooltipText}>
-                    {techIcons.typescript.tooltipText}
+                    {Icons.typescript.tooltipText}
                   </span>
                 </span>
               </div>
@@ -81,7 +79,7 @@ const Projects = () => {
           </div>
           <div className={styles.projectsList}>
             <VerticalTimeline animate={false} lineColor="grey">
-              {projects.map((item, index) => (
+              {ProjectsList.map((item, index) => (
                 <VerticalTimelineElement
                   key={index}
                   date={`${index}`}
@@ -96,11 +94,11 @@ const Projects = () => {
                         {item.techUsed.map((tech, index) => (
                           <span key={`${index}`} className={styles.tooltip}>
                             <img
-                              src={techIcons[tech].iconSource}
+                              src={Icons[tech].iconSource}
                               className={styles.logo}
                             />
                             <span className={styles.tooltipText}>
-                              {techIcons[tech].tooltipText}
+                              {Icons[tech].tooltipText}
                             </span>
                           </span>
                         ))}
