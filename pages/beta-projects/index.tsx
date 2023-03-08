@@ -79,47 +79,56 @@ const Projects = () => {
           </div>
           <div className={styles.projectsList}>
             <VerticalTimeline animate={false} lineColor="grey">
-              {ProjectsList.map((item, index) => (
+              {Object.keys(ProjectsList).map((month, index) => (
                 <VerticalTimelineElement
                   key={index}
-                  date={`${index}`}
+                  date={`${month}`}
                   contentStyle={timelineStyles.timelineContent}
                   contentArrowStyle={timelineStyles.contentArrow}
                   iconStyle={timelineStyles.timelineIcon}
                 >
-                  <div className={styles.projectInfoContainer}>
-                    <div className={styles.projectTitle}>{item.name}</div>
-                    <div className={styles.additionalInfo}>
-                      <div className={styles.techUsedInfo}>
-                        {item.techUsed.map((tech, index) => (
-                          <span key={`${index}`} className={styles.tooltip}>
-                            <img
-                              src={Icons[tech].iconSource}
-                              className={styles.logo}
-                            />
-                            <span className={styles.tooltipText}>
-                              {Icons[tech].tooltipText}
-                            </span>
-                          </span>
-                        ))}
+                  <>
+                    {ProjectsList[month].map((item, key) => (
+                      <div key={key} className={styles.projectInfoContainer}>
+                        <div className={styles.projectTitle}>{item.name}</div>
+                        <div className={styles.additionalInfo}>
+                          <div className={styles.techUsedInfo}>
+                            {item.techUsed.map((tech, index) => (
+                              <span key={`${index}`} className={styles.tooltip}>
+                                <img
+                                  src={Icons[tech].iconSource}
+                                  className={styles.logo}
+                                />
+                                <span className={styles.tooltipText}>
+                                  {Icons[tech].tooltipText}
+                                </span>
+                              </span>
+                            ))}
+                          </div>
+                          <div
+                            className={styles.additionalInfoText}
+                            dangerouslySetInnerHTML={{
+                              __html: item.description,
+                            }}
+                          />
+                        </div>
+                        <div className={styles.techUsedInfo}>
+                          <img
+                            src="/github.svg"
+                            className={styles.githubLogo}
+                          />
+                          <a
+                            target={"_blank"}
+                            rel="noreferrer"
+                            className={styles.sourceUrl}
+                            href={item.sourceUrl}
+                          >
+                            {item.sourceUrl}
+                          </a>
+                        </div>
                       </div>
-                      <div
-                        className={styles.additionalInfoText}
-                        dangerouslySetInnerHTML={{ __html: item.description }}
-                      />
-                    </div>
-                    <div className={styles.techUsedInfo}>
-                      <img src="/github.svg" className={styles.githubLogo} />
-                      <a
-                        target={"_blank"}
-                        rel="noreferrer"
-                        className={styles.sourceUrl}
-                        href={item.sourceUrl}
-                      >
-                        {item.sourceUrl}
-                      </a>
-                    </div>
-                  </div>
+                    ))}
+                  </>
                 </VerticalTimelineElement>
               ))}
             </VerticalTimeline>
