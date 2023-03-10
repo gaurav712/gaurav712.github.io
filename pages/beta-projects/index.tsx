@@ -15,6 +15,11 @@ const timelineStyles: { [key: string]: CSSProperties } = {
     backgroundColor: "#282828",
     boxShadow: "none",
     top: "-20px",
+    padding: "1rem auto",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
   },
   contentArrow: {
     borderRightColor: "#282828",
