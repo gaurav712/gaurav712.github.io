@@ -91,6 +91,7 @@ const Projects = () => {
                   contentStyle={timelineStyles.timelineContent}
                   contentArrowStyle={timelineStyles.contentArrow}
                   iconStyle={timelineStyles.timelineIcon}
+                  dateClassName={styles.timelineDate}
                 >
                   <>
                     {ProjectsList[month].map((item, key) => (

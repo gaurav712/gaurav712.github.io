@@ -13,6 +13,12 @@
   background-color: blue;
 }
 
+.timelineDate {
+  font-size: 2rem !important;
+  top: -1rem !important;
+  font-weight: bold !important;
+}
+
 .projectInfoContainer {
   width: 100%;
   border-top: 2px solid #fff;
