@@ -35,3 +35,21 @@ body {
     top: -12px !important;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .vertical-timeline {
+    width: 100% !important;
+  }
+
+  .vertical-timeline::before {
+    left: 0px !important;
+  }
+
+  .vertical-timeline-element-icon {
+    margin-left: -0.6rem !important;
+  }
+
+  .vertical-timeline-element-content {
+    margin-left: 1.75rem !important;
+  }
+}
