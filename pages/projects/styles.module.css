@@ -4,15 +4,30 @@
 
 .projectsList {
   border-top: 1px solid gray;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: flex !important;
   margin-top: 2.5rem;
+  padding-top: 1rem;
+}
+
+.timelineElementContainer {
+  background-color: blue;
+}
+
+.timelineDate {
+  font-size: 2rem !important;
+  top: -1rem !important;
+  font-weight: bold !important;
 }
 
 .projectInfoContainer {
   width: 100%;
-  margin: 1rem auto;
+  border-top: 2px solid #fff;
+  padding: 1rem 0;
+}
+
+.projectInfoContainer:nth-child(2) {
+  border-top: none;
+  padding-top: unset;
 }
 
 .projectTitle {
