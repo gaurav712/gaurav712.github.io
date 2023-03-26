@@ -3,6 +3,12 @@ import { IProjectsList } from "./types";
 const projects: IProjectsList = {
   "Feb, 2023": [
     {
+      name: "Wordle",
+      techUsed: ["react_native"],
+      description: "The famous wordle game!",
+      sourceUrl: "https://github.com/gaurav712/react-native-wordle",
+    },
+    {
       name: "DynamoDB-Stream-Changes",
       techUsed: ["react_native", "python", "aws", "google_maps"],
       description:
