@@ -6,7 +6,8 @@ const projects: IProjectsList = {
       name: "WordleFree",
       techUsed: ["react_native"],
       description: "The viral word game!",
-      sourceUrl: "https://github.com/gaurav712/WordleFree",
+      sourceUrl:
+        "https://play.google.com/store/apps/details?id=io.github.gaurav712.wordle",
     },
     {
       name: "DynamoDB-Stream-Changes",
