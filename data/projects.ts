@@ -3,9 +3,9 @@ import { IProjectsList } from "./types";
 const projects: IProjectsList = {
   "Feb, 2023": [
     {
-      name: "WordleFree",
+      name: "Guess the word",
       techUsed: ["react_native"],
-      description: "The viral word game!",
+      description: "The viral wordle game!",
       sourceUrl:
         "https://play.google.com/store/apps/details?id=io.github.gaurav712.wordle",
     },
