@@ -1,4 +1,4 @@
-import { IProjectsList } from "./types";
+import { IProjectsList } from "../types";
 
 const projects: IProjectsList = {
   "Feb, 2023": [

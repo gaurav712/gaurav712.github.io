@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { CSSProperties, useRef } from "react";
+import { CSSProperties, useRef, useState } from "react";
 import NavBar from "../../components/NavBar";
-import ProjectsList from "../../data/projects";
+import { projects, projectTypes } from "../../data/projects";
 import Icons from "../../data/icons";
 import styles from "./styles.module.css";
 import {
@@ -35,6 +35,11 @@ const timelineStyles: { [key: string]: CSSProperties } = {
 
 const Projects = () => {
   const selectedItem = useRef("Projects");
+  const [activeTab, setActiveTab] = useState<string>(projectTypes[0]);
+
+  const handleTabTitleClicked = (title: string) => {
+    setActiveTab(title);
+  };
 
   return (
     <>
@@ -82,9 +87,22 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          <div className={styles.tabBar}>
+            {projectTypes.map((type, key) => (
+              <span
+                key={key}
+                className={`${styles.tabTitle} ${
+                  type === activeTab ? styles.tabTitleActive : ""
+                }`}
+                onClick={() => handleTabTitleClicked(type)}
+              >
+                {type}
+              </span>
+            ))}
+          </div>
           <div className={styles.projectsList}>
             <VerticalTimeline animate={false} lineColor="grey">
-              {Object.keys(ProjectsList).map((month, index) => (
+              {Object.keys(projects[activeTab]).map((month, index) => (
                 <VerticalTimelineElement
                   key={index}
                   date={`${month}`}
@@ -94,7 +112,7 @@ const Projects = () => {
                   dateClassName={styles.timelineDate}
                 >
                   <>
-                    {ProjectsList[month].map((item, key) => (
+                    {projects[activeTab][month].map((item, key) => (
                       <div key={key} className={styles.projectInfoContainer}>
                         <div className={styles.projectTitle}>{item.name}</div>
                         <div className={styles.additionalInfo}>

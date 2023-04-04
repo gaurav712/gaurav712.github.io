@@ -15,3 +15,7 @@ interface IProject {
 export interface IProjectsList {
   [key: string]: IProject[];
 }
+
+export interface IProjectsData {
+  [key: string]: IProjectsList;
+}

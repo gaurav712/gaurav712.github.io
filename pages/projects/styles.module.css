@@ -2,10 +2,28 @@
   padding: 0 1.5rem;
 }
 
-.projectsList {
-  border-top: 1px solid gray;
-  display: flex !important;
+.tabBar {
   margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tabTitle {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tabTitleActive {
+  background-color: #282828;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.projectsList {
+  border-top: 2px solid #282828;
+  display: flex !important;
   padding-top: 1rem;
 }
 
@@ -106,6 +124,10 @@
   .websiteInfoContainer {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .tabTitle {
+    font-size: 1.5rem;
   }
 
   .projectsList {
