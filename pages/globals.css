@@ -27,6 +27,10 @@ body {
   background: black;
 }
 
+.vertical-timeline-element-icon {
+  box-shadow: none !important;
+}
+
 @media only screen and (max-width: 1170px) {
   .vertical-timeline-element-icon {
     margin-left: 0.5rem !important;
