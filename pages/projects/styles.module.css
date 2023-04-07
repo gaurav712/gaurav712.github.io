@@ -18,7 +18,7 @@
 
 .tabTitleActive {
   background-color: #282828;
-  border-radius: 0.75rem 0.75rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 
 .projectsList {
@@ -128,6 +128,10 @@
 
   .tabTitle {
     font-size: 1.5rem;
+  }
+
+  .tabTitleActive {
+    border-radius: 0.75rem 0.75rem 0 0;
   }
 
   .projectsList {
