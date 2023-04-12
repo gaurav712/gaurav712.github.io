@@ -137,7 +137,14 @@ const Projects = () => {
                           />
                         </div>
                         <div className={styles.techUsedInfo}>
-                          <img src="/earth.svg" className={styles.githubLogo} />
+                          <img
+                            src={
+                              item.sourceUrl.includes("github.com")
+                                ? "/github.svg"
+                                : "/earth.svg"
+                            }
+                            className={styles.githubLogo}
+                          />
                           <a
                             target={"_blank"}
                             rel="noreferrer"
