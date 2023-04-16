@@ -25,17 +25,22 @@ const More = () => {
               <div className={styles.basicInfoContainer}>
                 <div className={styles.headingText}>About</div>
                 <div className={styles.infoContentContainer}>
-                  <p>Hello! I&#39;m Gaurav Kumar Yadav from UP, IN.</p>
                   <p>
-                    Currently a Frontend Developer. I do React(Native) for the
-                    most part. It&#39;s &#39;systems programming&#39; when off
-                    the day-job.
+                    Salutations! I am a seasoned software engineer based in
+                    India, presently serving as a frontend developer.
                   </p>
                   <p>
-                    Passionate about &#39;tech&#39;, obviously, ever since
-                    school. Exploring new things thrills me, anything I can
-                    find. What interests me the most is video games, whether
-                    it&#39;s playing, designing... ANYTHING GAMES!!
+                    Beyond my professional pursuits, I am an ardent learner
+                    exploring new technologies and refining my acumen. My love
+                    for video games has endowed me with an innate ability to
+                    approach problems with ingenuity and creativity, traits that
+                    have served me well in my career.
+                  </p>
+                  <p>
+                    With my years of experience, along with a steadfast
+                    commitment to staying ahead of the curve, I am relentlessly
+                    pursuing novel and challenging projects to sink my teeth
+                    into!
                   </p>
                 </div>
               </div>
