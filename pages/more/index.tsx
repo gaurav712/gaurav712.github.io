@@ -31,10 +31,9 @@ const More = () => {
                   </p>
                   <p>
                     Beyond my professional pursuits, I am an ardent learner
-                    exploring new technologies and refining my acumen. My love
-                    for video games has endowed me with an innate ability to
-                    approach problems with ingenuity and creativity, traits that
-                    have served me well in my career.
+                    exploring new technologies. My love for video games has
+                    endowed me with the ability to approach problems with a
+                    unique approach.
                   </p>
                   <p>
                     With my years of experience, along with a steadfast
