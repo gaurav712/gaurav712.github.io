@@ -1,6 +1,15 @@
 import { IProjectsList } from "../types";
 
 const projects: IProjectsList = {
+  "Mar, 2023": [
+    {
+      name: "Karuna Therapeutics",
+      techUsed: ["nextjs", "electron"],
+      description:
+        'An electron app for a medical conference by <i><a style="display: inline;" href="https://karunatx.com">Karuna Therapeutics</a></i> using NextJS',
+      sourceUrl: "https://karunatx.com",
+    },
+  ],
   "Feb, 2023": [
     {
       name: "Lilly Design System",

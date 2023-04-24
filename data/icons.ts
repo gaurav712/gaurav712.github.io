@@ -61,6 +61,10 @@ const techIcons: ITechIcons = {
     iconSource: "/google_maps.svg",
     tooltipText: "Google Maps",
   },
+  electron: {
+    iconSource: "/electron.svg",
+    tooltipText: "Electron",
+  },
 };
 
 export default techIcons;
