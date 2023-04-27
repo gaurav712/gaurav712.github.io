@@ -37,8 +37,16 @@ const Projects = () => {
   const selectedItem = useRef("Projects");
   const [activeTab, setActiveTab] = useState<string>(projectTypes[0]);
 
-  const handleTabTitleClicked = (title: string) => {
-    setActiveTab(title);
+  const toggleProjectType = () => {
+    try {
+      if (activeTab === projectTypes[0]) {
+        setActiveTab(projectTypes[1]);
+      } else {
+        setActiveTab(projectTypes[0]);
+      }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -87,15 +95,19 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className={styles.tabBar}>
+          <div
+            className={`${styles.projectTypeSwitcher} ${styles.tabBar}`}
+            onClick={toggleProjectType}
+          >
+            <div
+              className={`${styles.projectTypeSwitcherElement} ${
+                activeTab === projectTypes[1]
+                  ? styles.secondItemSelected
+                  : styles.firstItemSelected
+              }`}
+            />
             {projectTypes.map((type, key) => (
-              <span
-                key={key}
-                className={`${styles.tabTitle} ${
-                  type === activeTab ? styles.tabTitleActive : ""
-                }`}
-                onClick={() => handleTabTitleClicked(type)}
-              >
+              <span key={key} className={styles.tabTitle}>
                 {type}
               </span>
             ))}

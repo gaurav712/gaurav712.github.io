@@ -2,23 +2,64 @@
   padding: 0 1.5rem;
 }
 
+.projectTypeSwitcher {
+  position: relative;
+  margin: 2rem auto;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background: #282828;
+  box-shadow: inset 5px 5px 10px #171717, inset -5px -5px 10px #393939;
+}
+
+.projectTypeSwitcherElement {
+  height: calc(100% - 1.5rem);
+  width: 50%;
+  position: absolute;
+  border-radius: 0.5rem;
+  background: linear-gradient(145deg, #2b2b2b, #242424);
+  box-shadow: 5px 5px 10px #171717, -5px -5px 10px #393939;
+}
+
+@keyframes moveLeft {
+  from {
+    right: 0.75rem;
+  }
+  to {
+    right: calc(50% - 0.75rem);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    right: calc(50% - 0.75rem);
+  }
+  to {
+    right: 0.75rem;
+  }
+}
+
+.firstItemSelected {
+  right: calc(50% - 0.75rem);
+  animation: moveLeft 0.45s ease-in-out;
+}
+
+.secondItemSelected {
+  right: 0.75rem;
+  animation: moveRight 0.45s ease-in-out;
+}
+
 .tabBar {
   margin-top: 2.5rem;
   display: flex;
-  justify-content: space-evenly;
 }
 
 .tabTitle {
-  flex-grow: 1;
+  width: 50%;
   padding: 0.5rem;
   font-size: 1.25rem;
-  cursor: pointer;
   text-align: center;
-}
-
-.tabTitleActive {
-  background-color: #282828;
-  border-radius: 0.25rem 0.25rem 0 0;
+  z-index: 100;
 }
 
 .projectsList {
