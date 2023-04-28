@@ -63,13 +63,8 @@
 }
 
 .projectsList {
-  border-top: 2px solid #282828;
   display: flex !important;
   padding-top: 1rem;
-}
-
-.timelineElementContainer {
-  background-color: blue;
 }
 
 .timelineDate {
