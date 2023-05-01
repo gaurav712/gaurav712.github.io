@@ -1,6 +1,15 @@
 import { IProjectsList } from "../types";
 
 const projects: IProjectsList = {
+  "May, 2023": [
+    {
+      name: "Vertex Pharmaceuticals",
+      techUsed: ["nextjs", "electron"],
+      description:
+        'An electron app for a medical conference by <i><a style="display: inline;" href="https://www.vrtx.com">Vertex Pharmaceuticals Incorporated</a></i> using NextJS',
+      sourceUrl: "https://www.vrtx.com",
+    },
+  ],
   "Mar, 2023": [
     {
       name: "Karuna Therapeutics",
