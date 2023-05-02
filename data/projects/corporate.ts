@@ -6,7 +6,7 @@ const projects: IProjectsList = {
       name: "Vertex Pharmaceuticals",
       techUsed: ["nextjs", "electron"],
       description:
-        'An electron app for a medical conference by <i><a style="display: inline;" href="https://www.vrtx.com">Vertex Pharmaceuticals Incorporated</a></i> using NextJS',
+        'An electron app for a medical conference by <i><a style="display: inline;" href="https://www.vrtx.com">Vertex Pharmaceuticals Incorporated</a></i> using NextJS with interactive graphs and animated, dynamic UI.',
       sourceUrl: "https://www.vrtx.com",
     },
   ],
