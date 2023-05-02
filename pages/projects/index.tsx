@@ -12,7 +12,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const timelineStyles: { [key: string]: CSSProperties } = {
   timelineContent: {
-    backgroundColor: "#282828",
+    backgroundColor: "#303030",
     boxShadow: "none",
     top: "-20px",
     padding: "1rem auto",
@@ -22,7 +22,7 @@ const timelineStyles: { [key: string]: CSSProperties } = {
     justifyContent: "center",
   },
   contentArrow: {
-    borderRightColor: "#282828",
+    borderRightColor: "#303030",
   },
   timelineIcon: {
     backgroundColor: "#fff",
