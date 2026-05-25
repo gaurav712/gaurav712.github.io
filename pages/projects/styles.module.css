@@ -10,7 +10,7 @@
 
 .projectTypeSwitcher {
   position: relative;
-  margin: 2rem auto 2.5rem;
+  margin: 2rem auto;
   max-width: 22rem;
   padding: 0.35rem;
   cursor: pointer;
@@ -75,8 +75,7 @@
 }
 
 .showcase {
-  margin-top: 0;
-  padding-top: 2rem;
+  margin-top: 2rem;
   width: 100%;
 }
 
