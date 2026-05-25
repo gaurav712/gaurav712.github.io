@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { CSSProperties, useRef, useState } from "react";
+import { CSSProperties, useState } from "react";
 import NavBar from "../../components/NavBar";
 import { projects, projectTypes } from "../../data/projects";
 import Icons from "../../data/icons";
@@ -34,7 +34,7 @@ const timelineStyles: { [key: string]: CSSProperties } = {
 };
 
 const Projects = () => {
-  const selectedItem = useRef("Projects");
+  const selectedItem = "Projects";
   const [activeTab, setActiveTab] = useState<string>(projectTypes[0]);
 
   const toggleProjectType = () => {
@@ -55,7 +55,7 @@ const Projects = () => {
         <title>My Work</title>
       </Head>
       <div className={styles.container}>
-        <NavBar selectedItem={selectedItem.current} />
+        <NavBar selectedItem={selectedItem} />
         <div className={styles.main}>
           <div className={styles.websiteInfoContainer}>
             <div className={styles.projectTitle}>The Portfolio</div>

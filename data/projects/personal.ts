@@ -1,6 +1,98 @@
 import { IProjectsList } from "../types";
 
 const projects: IProjectsList = {
+  "May, 2026": [
+    {
+      name: "local-ai-completion.nvim",
+      techUsed: ["python"],
+      description:
+        "Neovim code completion using local LLMs (configured for port 8080 by default).",
+      sourceUrl: "https://github.com/gaurav712/local-ai-completion.nvim",
+    },
+  ],
+  "Mar, 2026": [
+    {
+      name: "Coop Bridge",
+      techUsed: ["c"],
+      description:
+        "A simple tool to pass gamepad events over WebSockets (remotely connecting a gamepad).",
+      sourceUrl: "https://github.com/gaurav712/coop-bridge",
+    },
+    {
+      name: "wl-stream",
+      techUsed: ["c"],
+      description:
+        "Low-latency Wayland display stream over WebRTC.",
+      sourceUrl: "https://github.com/gaurav712/wl-stream",
+    },
+  ],
+  "Jan, 2026": [
+    {
+      name: "notwell",
+      techUsed: ["c", "sdl"],
+      description: "A photo culling application in SDL.",
+      sourceUrl: "https://github.com/gaurav712/notwell",
+    },
+  ],
+  "Dec, 2025": [
+    {
+      name: "mded-rust",
+      techUsed: ["c"],
+      description:
+        "Markdown editor in Rust (incomplete; renders only).",
+      sourceUrl: "https://github.com/gaurav712/mded-rust",
+    },
+    {
+      name: "notification-listener",
+      techUsed: ["android", "kotlin"],
+      description:
+        "An Android application that listens to notification updates.",
+      sourceUrl: "https://github.com/gaurav712/notification-listener",
+    },
+    {
+      name: "calculator",
+      techUsed: ["c"],
+      description:
+        "A simple calculator that works like a bad stripped-down Spotlight.",
+      sourceUrl: "https://github.com/gaurav712/calculator",
+    },
+  ],
+  "Nov, 2025": [
+    {
+      name: "monotonic-clock",
+      techUsed: ["android", "kotlin"],
+      description: "Jetpack Compose widget experiments.",
+      sourceUrl: "https://github.com/gaurav712/monotonic-clock",
+    },
+    {
+      name: "keypress-listener",
+      techUsed: ["c"],
+      description:
+        "Keypress listener using libinput to implement keybindings.",
+      sourceUrl: "https://github.com/gaurav712/keypress-listener",
+    },
+    {
+      name: "desktop-thingy",
+      techUsed: ["c", "gtk"],
+      description:
+        "Draws a bar, desktop background, and a dashboard with day, date and weather using gtk4-layer-shell.",
+      sourceUrl: "https://github.com/gaurav712/desktop-thingy",
+    },
+    {
+      name: "launcher",
+      techUsed: ["c"],
+      description: "dmenu-like application launcher.",
+      sourceUrl: "https://github.com/gaurav712/launcher",
+    },
+  ],
+  "Aug, 2024": [
+    {
+      name: "monotone-icons",
+      techUsed: ["android", "kotlin"],
+      description: "Minimalist monotone Android icon pack.",
+      sourceUrl: "https://github.com/gaurav712/monotone-icons",
+    },
+  ],
   "Apr, 2023": [
     {
       name: "Commute Crew",

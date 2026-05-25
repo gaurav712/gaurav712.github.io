@@ -1,6 +1,25 @@
 import { IProjectsList } from "../types";
 
 const projects: IProjectsList = {
+  "Jun, 2024": [
+    {
+      name: "Local Shows",
+      techUsed: ["react_native", "typescript"],
+      description:
+        'Contributed temporarily to the <b>Local Shows</b> mobile app (<i><a style="display: inline;" href="https://localshows.com">Shows in the U.S., Inc.</a></i>)—a geo-targeted platform that connects bands, artists, venues, and promoters with local audiences. Organizers post shows with photos; fans discover nearby gigs via location- and interest-based recommendations across the global <b>"Shows in"</b> network. Built with React Native for iOS.',
+      sourceUrl:
+        "https://apps.apple.com/us/app/local-shows/id6504993018",
+    },
+  ],
+  "Nov, 2023": [
+    {
+      name: "The Meat Locker",
+      techUsed: ["react_native", "typescript"],
+      description:
+        "A <b>farm-to-table meat delivery</b> app for ordering locally sourced cuts, scheduling deliveries, managing subscriptions, and tracking orders from farm to doorstep—built with React Native and TypeScript.",
+      sourceUrl: "_",
+    },
+  ],
   "May, 2023": [
     {
       name: "Vertex Pharmaceuticals",

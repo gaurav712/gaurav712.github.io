@@ -1,10 +1,9 @@
 import Head from "next/head";
-import { useRef } from "react";
 import NavBar from "../components/NavBar";
 import styles from "./styles.module.css";
 
 const Home = () => {
-  const selectedItem = useRef("Me");
+  const selectedItem = "Me";
 
   return (
     <>
@@ -14,7 +13,7 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={styles.container}>
-        <NavBar selectedItem={selectedItem.current} />
+        <NavBar selectedItem={selectedItem} />
         <div className={styles.infoContainer}>
           <div className={styles.avatarContainer}>
             <img
