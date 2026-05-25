@@ -74,6 +74,7 @@
 .showcase {
   margin-top: 0;
   padding-top: 2rem;
+  width: 100%;
 }
 
 .sectionLabel {
@@ -100,56 +101,45 @@
   position: relative;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 0.35rem;
-  top: 2.5rem;
-  bottom: 0;
-  width: 2px;
-  background: rgba(120, 120, 120, 0.75);
-}
-
 .timelineGroup {
-  display: grid;
-  grid-template-columns: 9rem 1fr;
-  gap: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   margin-bottom: 2rem;
-  position: relative;
 }
 
 .timelineRail {
   display: flex;
   flex-direction: row;
   align-items: center;
-  align-self: start;
-  gap: 0.65rem;
-  position: relative;
-  z-index: 1;
+  gap: 0.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 .timelineDot {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 0.6rem;
+  height: 0.6rem;
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0 0 0 3px #282828, 0 0 0 4px #555;
+  box-shadow: 0 0 0 2px #282828, 0 0 0 3px #555;
   flex-shrink: 0;
 }
 
 .timelinePeriod {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: #aaa;
   line-height: 1.3;
-  white-space: nowrap;
 }
 
 .timelineCards {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
   min-width: 0;
 }
 
@@ -189,10 +179,9 @@
 
 .cardHeader {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0.75rem 1rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.65rem;
 }
 
 .cardHeading {
@@ -234,7 +223,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 0.35rem;
   flex-shrink: 0;
 }
@@ -279,6 +268,7 @@
   color: #999;
   transition: color 0.15s ease;
   min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .sourceUrl:hover {
@@ -313,6 +303,18 @@
   .featuredGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .cardHeader {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem 1rem;
+  }
+
+  .cardTech {
+    justify-content: flex-end;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -329,12 +331,47 @@
     font-size: 1.35rem;
   }
 
+  .timeline {
+    position: relative;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 0.35rem;
+    top: 2.5rem;
+    bottom: 0;
+    width: 2px;
+    background: rgba(120, 120, 120, 0.75);
+  }
+
   .timelineGroup {
+    display: grid;
     grid-template-columns: 10rem 1fr;
+    gap: 1rem 1.5rem;
+    position: relative;
+  }
+
+  .timelineRail {
+    align-self: start;
+    gap: 0.65rem;
+    padding-bottom: 0;
+    border-bottom: none;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timelineDot {
+    width: 0.75rem;
+    height: 0.75rem;
+    box-shadow: 0 0 0 3px #282828, 0 0 0 4px #555;
   }
 
   .timelinePeriod {
     font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    white-space: nowrap;
   }
 }
 
