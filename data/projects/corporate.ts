@@ -1,6 +1,16 @@
 import { IProjectsList } from "../types";
 
 const projects: IProjectsList = {
+  "Dec, 2024": [
+    {
+      name: "Let's Hang",
+      techUsed: ["react", "react_native", "typescript", "firebase"],
+      description:
+        '<i>"Let\'s Hang lets you easily schedule hangouts, share invites, manage replies, and keep all your group plans organized in one place. Designed for friends who want to make real plans instead of endless group texts - private, ad-free, and built for effortless planning."</i>',
+   
+      sourceUrl: "https://letshang.info",
+    },
+  ],
   "Jun, 2024": [
     {
       name: "Local Shows",

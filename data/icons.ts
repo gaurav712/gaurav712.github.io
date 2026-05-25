@@ -65,6 +65,10 @@ const techIcons: ITechIcons = {
     iconSource: "/electron.svg",
     tooltipText: "Electron",
   },
+  firebase: {
+    iconSource: "/firebase.svg",
+    tooltipText: "Firebase",
+  },
 };
 
 export default techIcons;
