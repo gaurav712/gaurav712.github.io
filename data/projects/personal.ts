@@ -13,6 +13,7 @@ const projects: IProjectsList = {
   "Mar, 2026": [
     {
       name: "Coop Bridge",
+      featured: true,
       techUsed: ["c"],
       description:
         "A simple tool to pass gamepad events over WebSockets (remotely connecting a gamepad).",
@@ -20,6 +21,7 @@ const projects: IProjectsList = {
     },
     {
       name: "wl-stream",
+      featured: true,
       techUsed: ["c"],
       description:
         "Low-latency Wayland display stream over WebRTC.",
@@ -73,6 +75,7 @@ const projects: IProjectsList = {
     },
     {
       name: "desktop-thingy",
+      featured: true,
       techUsed: ["c", "gtk"],
       description:
         "Draws a bar, desktop background, and a dashboard with day, date and weather using gtk4-layer-shell.",
@@ -88,6 +91,7 @@ const projects: IProjectsList = {
   "Aug, 2024": [
     {
       name: "monotone-icons",
+      featured: true,
       techUsed: ["android", "kotlin"],
       description: "Minimalist monotone Android icon pack.",
       sourceUrl: "https://github.com/gaurav712/monotone-icons",
@@ -96,6 +100,7 @@ const projects: IProjectsList = {
   "Apr, 2023": [
     {
       name: "Commute Crew",
+      featured: true,
       techUsed: ["react_native", "google_maps"],
       description:
         "A car pooling platform. Share rides along common paths and save costs.",
@@ -105,6 +110,7 @@ const projects: IProjectsList = {
   "Feb, 2023": [
     {
       name: "Guess the word",
+      featured: true,
       techUsed: ["react_native"],
       description: "The viral wordle game!",
       sourceUrl:
@@ -112,6 +118,7 @@ const projects: IProjectsList = {
     },
     {
       name: "DynamoDB-Stream-Changes",
+      featured: true,
       techUsed: ["react_native", "python", "aws", "google_maps"],
       description:
         "An android application to update markers on a map in real-time as the list is updated in the database. Uses DynamoDB, GatewayAPI, Websockets, and AWS Lambda.",
@@ -127,6 +134,7 @@ const projects: IProjectsList = {
   "Jan, 2023": [
     {
       name: "AKTU Exam Preparation",
+      featured: true,
       techUsed: ["nextjs", "typescript"],
       description:
         "A website to help AKTU students to prepare for exams, providing them with concise guides on subjects.",

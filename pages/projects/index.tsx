@@ -1,52 +1,82 @@
 import Head from "next/head";
-import { CSSProperties, useState } from "react";
+import { useState } from "react";
 import NavBar from "../../components/NavBar";
-import { projects, projectTypes } from "../../data/projects";
-import Icons from "../../data/icons";
-import styles from "./styles.module.css";
 import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+  getFeaturedProjects,
+  getTimelineGroups,
+  projectTypes,
+} from "../../data/projects";
+import Icons from "../../data/icons";
+import { IProject } from "../../data/types";
+import styles from "./styles.module.css";
 
-const timelineStyles: { [key: string]: CSSProperties } = {
-  timelineContent: {
-    backgroundColor: "#303030",
-    boxShadow: "none",
-    top: "-20px",
-    padding: "1rem auto",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  contentArrow: {
-    borderRightColor: "#303030",
-  },
-  timelineIcon: {
-    backgroundColor: "#fff",
-    width: "1.5rem",
-    height: "1.5rem",
-    boxShadow: "none !important",
-    marginLeft: "-0.75rem",
-  },
+const hasValidSource = (url: string) => url && url !== "_";
+
+type ProjectCardProps = {
+  project: IProject;
+  period?: string;
+  featured?: boolean;
 };
+
+const ProjectCard = ({ project, period, featured }: ProjectCardProps) => (
+  <article
+    className={`${styles.card} ${featured ? styles.cardFeatured : ""}`}
+  >
+    <header className={styles.cardHeader}>
+      <div className={styles.cardHeading}>
+        {featured && <span className={styles.featuredBadge}>Highlight</span>}
+        <h3 className={styles.cardTitle}>{project.name}</h3>
+        {period && <time className={styles.cardPeriod}>{period}</time>}
+      </div>
+      <div className={styles.cardTech}>
+        {project.techUsed.map((tech, index) => (
+          <span key={index} className={styles.tooltip}>
+            <img src={Icons[tech].iconSource} className={styles.logo} alt="" />
+            <span className={styles.tooltipText}>
+              {Icons[tech].tooltipText}
+            </span>
+          </span>
+        ))}
+      </div>
+    </header>
+    <div
+      className={styles.cardDescription}
+      dangerouslySetInnerHTML={{ __html: project.description }}
+    />
+    {hasValidSource(project.sourceUrl) && (
+      <footer className={styles.cardFooter}>
+        <img
+          src={
+            project.sourceUrl.includes("github.com")
+              ? "/github.svg"
+              : "/earth.svg"
+          }
+          className={styles.githubLogo}
+          alt=""
+        />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className={styles.sourceUrl}
+          href={project.sourceUrl}
+        >
+          {project.sourceUrl}
+        </a>
+      </footer>
+    )}
+  </article>
+);
 
 const Projects = () => {
   const selectedItem = "Projects";
   const [activeTab, setActiveTab] = useState<string>(projectTypes[0]);
+  const featured = getFeaturedProjects(activeTab);
+  const timelineGroups = getTimelineGroups(activeTab);
 
   const toggleProjectType = () => {
-    try {
-      if (activeTab === projectTypes[0]) {
-        setActiveTab(projectTypes[1]);
-      } else {
-        setActiveTab(projectTypes[0]);
-      }
-    } catch (err) {
-      console.log(err);
-    }
+    setActiveTab((current) =>
+      current === projectTypes[0] ? projectTypes[1] : projectTypes[0]
+    );
   };
 
   return (
@@ -57,12 +87,18 @@ const Projects = () => {
       <div className={styles.container}>
         <NavBar selectedItem={selectedItem} />
         <div className={styles.main}>
-          <div className={styles.websiteInfoContainer}>
-            <div className={styles.projectTitle}>The Portfolio</div>
-            <div className={styles.additionalInfo}>
-              <div className={styles.techUsedInfo}>
+          <article className={`${styles.card} ${styles.portfolioCard}`}>
+            <header className={styles.cardHeader}>
+              <div className={styles.cardHeading}>
+                <h3 className={styles.cardTitle}>The Portfolio</h3>
+              </div>
+              <div className={styles.cardTech}>
                 <span className={styles.tooltip}>
-                  <img src={Icons.nextjs.iconSource} className={styles.logo} />
+                  <img
+                    src={Icons.nextjs.iconSource}
+                    className={styles.logo}
+                    alt=""
+                  />
                   <span className={styles.tooltipText}>
                     {Icons.nextjs.tooltipText}
                   </span>
@@ -71,33 +107,37 @@ const Projects = () => {
                   <img
                     src={Icons.typescript.iconSource}
                     className={styles.logo}
+                    alt=""
                   />
                   <span className={styles.tooltipText}>
                     {Icons.typescript.tooltipText}
                   </span>
                 </span>
               </div>
-              <div className={styles.additionalInfoText}>
-                Uses grayscale color palette, intended to be <b>simple</b> yet{" "}
-                <i>informative</i>, <b>monochrome</b> yet <i>flashy enough</i>,{" "}
-                <b>barebones</b> yet <i>responsive</i>.
-              </div>
-              <div className={styles.techUsedInfo}>
-                <img src="/github.svg" className={styles.githubLogo} />
-                <a
-                  target={"_blank"}
-                  rel="noreferrer"
-                  className={styles.sourceUrl}
-                  href="https://github.com/gaurav712/gaurav712.github.io"
-                >
-                  https://github.com/gaurav712/gaurav712.github.io
-                </a>
-              </div>
-            </div>
-          </div>
+            </header>
+            <p className={styles.cardDescription}>
+              Uses grayscale color palette, intended to be <b>simple</b> yet{" "}
+              <i>informative</i>, <b>monochrome</b> yet <i>flashy enough</i>,{" "}
+              <b>barebones</b> yet <i>responsive</i>.
+            </p>
+            <footer className={styles.cardFooter}>
+              <img src="/github.svg" className={styles.githubLogo} alt="" />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className={styles.sourceUrl}
+                href="https://github.com/gaurav712/gaurav712.github.io"
+              >
+                https://github.com/gaurav712/gaurav712.github.io
+              </a>
+            </footer>
+          </article>
+
           <div
             className={`${styles.projectTypeSwitcher} ${styles.tabBar}`}
             onClick={toggleProjectType}
+            role="tablist"
+            aria-label="Project category"
           >
             <div
               className={`${styles.projectTypeSwitcherElement} ${
@@ -107,72 +147,54 @@ const Projects = () => {
               }`}
             />
             {projectTypes.map((type, key) => (
-              <span key={key} className={styles.tabTitle}>
+              <span
+                key={key}
+                className={styles.tabTitle}
+                role="tab"
+                aria-selected={activeTab === type}
+              >
                 {type}
               </span>
             ))}
           </div>
-          <div className={styles.projectsList}>
-            <VerticalTimeline animate={false} lineColor="grey">
-              {Object.keys(projects[activeTab]).map((month, index) => (
-                <VerticalTimelineElement
-                  key={index}
-                  date={`${month}`}
-                  contentStyle={timelineStyles.timelineContent}
-                  contentArrowStyle={timelineStyles.contentArrow}
-                  iconStyle={timelineStyles.timelineIcon}
-                  dateClassName={styles.timelineDate}
-                >
-                  <>
-                    {projects[activeTab][month].map((item, key) => (
-                      <div key={key} className={styles.projectInfoContainer}>
-                        <div className={styles.projectTitle}>{item.name}</div>
-                        <div className={styles.additionalInfo}>
-                          <div className={styles.techUsedInfo}>
-                            {item.techUsed.map((tech, index) => (
-                              <span key={`${index}`} className={styles.tooltip}>
-                                <img
-                                  src={Icons[tech].iconSource}
-                                  className={styles.logo}
-                                />
-                                <span className={styles.tooltipText}>
-                                  {Icons[tech].tooltipText}
-                                </span>
-                              </span>
-                            ))}
-                          </div>
-                          <div
-                            className={styles.additionalInfoText}
-                            dangerouslySetInnerHTML={{
-                              __html: item.description,
-                            }}
-                          />
-                        </div>
-                        <div className={styles.techUsedInfo}>
-                          <img
-                            src={
-                              item.sourceUrl.includes("github.com")
-                                ? "/github.svg"
-                                : "/earth.svg"
-                            }
-                            className={styles.githubLogo}
-                          />
-                          <a
-                            target={"_blank"}
-                            rel="noreferrer"
-                            className={styles.sourceUrl}
-                            href={item.sourceUrl}
-                          >
-                            {item.sourceUrl}
-                          </a>
-                        </div>
-                      </div>
+
+          <section className={styles.showcase}>
+            {featured.length > 0 && (
+              <div className={styles.featuredSection}>
+                <h2 className={styles.sectionLabel}>Highlights</h2>
+                <div className={styles.featuredGrid}>
+                  {featured.map((project) => (
+                    <ProjectCard
+                      key={`${project.period}-${project.name}`}
+                      project={project}
+                      period={project.period}
+                      featured
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className={styles.timeline}>
+              <h2 className={styles.sectionLabel}>Timeline</h2>
+              {timelineGroups.map((group) => (
+                <div key={group.period} className={styles.timelineGroup}>
+                  <div className={styles.timelineRail}>
+                    <span className={styles.timelineDot} />
+                    <time className={styles.timelinePeriod}>{group.period}</time>
+                  </div>
+                  <div className={styles.timelineCards}>
+                    {group.items.map((project) => (
+                      <ProjectCard
+                        key={project.name}
+                        project={project}
+                      />
                     ))}
-                  </>
-                </VerticalTimelineElement>
+                  </div>
+                </div>
               ))}
-            </VerticalTimeline>
-          </div>
+            </div>
+          </section>
         </div>
       </div>
     </>

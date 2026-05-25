@@ -7,7 +7,7 @@ const Document = () => {
         <link rel="shortcut icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.bunny.net" />
         <link
-          href="https://fonts.bunny.net/css?family=lato:400|pacifico:400|vt323:400"
+          href="https://fonts.bunny.net/css?family=lato:400|pacifico:400"
           rel="stylesheet"
         />
       </Head>

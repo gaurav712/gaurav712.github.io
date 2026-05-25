@@ -5,12 +5,15 @@ export interface ITechIcons {
   };
 }
 
-interface IProject {
+export interface IProject {
   name: string;
   techUsed: string[];
   description: string;
   sourceUrl: string;
+  featured?: boolean;
 }
+
+export type ProjectWithPeriod = IProject & { period: string };
 
 export interface IProjectsList {
   [key: string]: IProject[];
