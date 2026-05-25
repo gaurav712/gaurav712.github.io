@@ -10,66 +10,70 @@
 
 .projectTypeSwitcher {
   position: relative;
-  margin: 2rem auto;
-  padding: 0.75rem;
+  margin: 2rem auto 2.5rem;
+  max-width: 22rem;
+  padding: 0.35rem;
   cursor: pointer;
-  border-radius: 0.5rem;
-  background: #282828;
-  box-shadow: inset 5px 5px 10px #171717, inset -5px -5px 10px #393939;
+  border-radius: 0.4rem;
+  background: #262626;
+  box-shadow:
+    inset 1px 1px 2px rgba(0, 0, 0, 0.55),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.04);
+  user-select: none;
 }
 
 .projectTypeSwitcherElement {
-  height: calc(100% - 1.5rem);
-  width: 50%;
   position: absolute;
-  border-radius: 0.5rem;
-  background: linear-gradient(145deg, #2b2b2b, #242424);
-  box-shadow: 5px 5px 10px #171717, -5px -5px 10px #393939;
-}
-
-@keyframes moveLeft {
-  from {
-    right: 0.75rem;
-  }
-  to {
-    right: calc(50% - 0.75rem);
-  }
-}
-
-@keyframes moveRight {
-  from {
-    right: calc(50% - 0.75rem);
-  }
-  to {
-    right: 0.75rem;
-  }
+  top: 0.35rem;
+  bottom: 0.35rem;
+  left: 0.35rem;
+  width: calc(50% - 0.35rem);
+  height: auto;
+  border-radius: 0.3rem;
+  background: linear-gradient(180deg, #343434 0%, #2c2c2c 100%);
+  box-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  transition: transform 0.22s ease-out;
+  pointer-events: none;
 }
 
 .firstItemSelected {
-  right: calc(50% - 0.75rem);
-  animation: moveLeft 0.28s cubic-bezier(0.34, 1.45, 0.64, 1);
+  transform: translateX(0);
 }
 
 .secondItemSelected {
-  right: 0.75rem;
-  animation: moveRight 0.28s cubic-bezier(0.34, 1.45, 0.64, 1);
+  transform: translateX(100%);
 }
 
 .tabBar {
-  margin-top: 2rem;
   display: flex;
+  align-items: stretch;
 }
 
 .tabTitle {
   width: 50%;
-  padding: 0.5rem;
-  font-size: 1.25rem;
+  padding: 0.5rem 0.35rem;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   text-align: center;
-  z-index: 100;
+  color: #888;
+  transition: color 0.2s ease;
+  z-index: 1;
+}
+
+.tabTitle[aria-selected="true"] {
+  color: #ddd;
 }
 
 .showcase {
-  margin-top: 2.5rem;
+  margin-top: 0;
+  padding-top: 2rem;
 }
 
 .sectionLabel {
@@ -317,8 +321,8 @@
   }
 
   .tabTitle {
-    padding: 0.75rem;
-    font-size: 1.5rem;
+    padding: 0.55rem 0.4rem;
+    font-size: 1.05rem;
   }
 
   .cardTitle {
