@@ -41,12 +41,12 @@
 
 .firstItemSelected {
   right: calc(50% - 0.75rem);
-  animation: moveLeft 0.45s ease-in-out;
+  animation: moveLeft 0.28s cubic-bezier(0.34, 1.45, 0.64, 1);
 }
 
 .secondItemSelected {
   right: 0.75rem;
-  animation: moveRight 0.45s ease-in-out;
+  animation: moveRight 0.28s cubic-bezier(0.34, 1.45, 0.64, 1);
 }
 
 .tabBar {
@@ -85,7 +85,6 @@
 }
 
 .projectTitle {
-  font-family: VT323;
   font-size: 1.75rem;
   max-width: 100%;
 }
