@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import NavBar from "../../components/NavBar";
+import Tooltip from "../../components/Tooltip";
 import {
   getFeaturedProjects,
   getTimelineGroups,
@@ -30,12 +31,9 @@ const ProjectCard = ({ project, period, featured }: ProjectCardProps) => (
       </div>
       <div className={styles.cardTech}>
         {project.techUsed.map((tech, index) => (
-          <span key={index} className={styles.tooltip}>
+          <Tooltip key={index} text={Icons[tech].tooltipText}>
             <img src={Icons[tech].iconSource} className={styles.logo} alt="" />
-            <span className={styles.tooltipText}>
-              {Icons[tech].tooltipText}
-            </span>
-          </span>
+          </Tooltip>
         ))}
       </div>
     </header>
@@ -93,26 +91,20 @@ const Projects = () => {
                 <h3 className={styles.cardTitle}>The Portfolio</h3>
               </div>
               <div className={styles.cardTech}>
-                <span className={styles.tooltip}>
+                <Tooltip text={Icons.nextjs.tooltipText}>
                   <img
                     src={Icons.nextjs.iconSource}
                     className={styles.logo}
                     alt=""
                   />
-                  <span className={styles.tooltipText}>
-                    {Icons.nextjs.tooltipText}
-                  </span>
-                </span>
-                <span className={styles.tooltip}>
+                </Tooltip>
+                <Tooltip text={Icons.typescript.tooltipText}>
                   <img
                     src={Icons.typescript.iconSource}
                     className={styles.logo}
                     alt=""
                   />
-                  <span className={styles.tooltipText}>
-                    {Icons.typescript.tooltipText}
-                  </span>
-                </span>
+                </Tooltip>
               </div>
             </header>
             <p className={styles.cardDescription}>

@@ -1,17 +1,54 @@
 import Head from "next/head";
 import NavBar from "../../components/NavBar";
+import Tooltip from "../../components/Tooltip";
 import styles from "./styles.module.css";
 
 const skillEntries = [
-  { icon: "/smartphone.svg", label: "React Native, Android(Kotlin), iOS(Swift)" },
-  { icon: "/pencil.svg", label: "ReactJS, HTML, CSS, JS" },
-  { icon: "/cpu.svg", label: "C/C++, Go, Rust" },
-  { icon: "/gamepad.svg", label: "Godot, Blender, Unreal Engine" },
-  { icon: "/server.svg", label: "ExpressJS, Golang" },
-  { icon: "/database.svg", label: "MySQL, MongoDB, Firebase" },
-  { icon: "/terminal.svg", label: "Linux, MacOS, FreeBSD, Windows" },
-  { icon: "/misc.svg", label: "Python, TypeScript, GIMP, Vim" },
-  { icon: "/zap.svg", label: "GenAI & LLM, Prompt Engineering" },
+  {
+    icon: "/smartphone.svg",
+    label: "React Native, Android(Kotlin), iOS(Swift)",
+    tooltipText: "Mobile Development",
+  },
+  {
+    icon: "/pencil.svg",
+    label: "ReactJS, HTML, CSS, JS",
+    tooltipText: "Frontend Technologies",
+  },
+  {
+    icon: "/cpu.svg",
+    label: "C/C++, Go, Rust",
+    tooltipText: "Systems Programming",
+  },
+  {
+    icon: "/gamepad.svg",
+    label: "Godot, Blender, Unreal Engine",
+    tooltipText: "Game Development",
+  },
+  {
+    icon: "/server.svg",
+    label: "ExpressJS, Golang",
+    tooltipText: "Backend Technologies",
+  },
+  {
+    icon: "/database.svg",
+    label: "MySQL, MongoDB, Firebase",
+    tooltipText: "Databases",
+  },
+  {
+    icon: "/terminal.svg",
+    label: "Linux, MacOS, FreeBSD, Windows",
+    tooltipText: "Operating Systems",
+  },
+  {
+    icon: "/misc.svg",
+    label: "Python, TypeScript, GIMP, Vim",
+    tooltipText: "Miscellaneous",
+  },
+  {
+    icon: "/zap.svg",
+    label: "GenAI & LLM, Prompt Engineering",
+    tooltipText: "Artificial Intelligence",
+  },
 ];
 
 const contactEntries = [
@@ -77,9 +114,19 @@ const More = () => {
                 <div className={styles.sectionBody}>
                   <ul className={styles.skillsList}>
                     {skillEntries.map((skill) => (
-                      <li key={skill.label} className={styles.contentListEntry}>
-                        <img className={styles.icon} src={skill.icon} alt="" />
-                        <span>{skill.label}</span>
+                      <li key={skill.label}>
+                        <Tooltip
+                          text={skill.tooltipText}
+                          inline={false}
+                          className={styles.contentListEntry}
+                        >
+                          <img
+                            className={styles.icon}
+                            src={skill.icon}
+                            alt=""
+                          />
+                          <span>{skill.label}</span>
+                        </Tooltip>
                       </li>
                     ))}
                   </ul>
