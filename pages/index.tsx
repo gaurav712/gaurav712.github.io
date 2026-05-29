@@ -10,7 +10,10 @@ const Home = () => {
       <Head>
         <title>Gaurav Kumar Yadav</title>
         <meta name="description" content="My Portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
       </Head>
       <div className={styles.container}>
         <NavBar selectedItem={selectedItem} />
