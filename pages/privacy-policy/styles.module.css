@@ -1,0 +1,122 @@
+.container {
+  padding: 0 1.5rem;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.shell {
+  composes: container;
+}
+
+.main {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.article {
+  max-width: 42rem;
+  margin: 0 auto;
+  color: #bbb;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.article :is(h1, h2, h3, h4) {
+  color: #fff;
+  line-height: 1.25;
+}
+
+.article h1 {
+  margin: 0 0 2rem;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-weight: 600;
+  text-align: left;
+}
+
+.article h2 {
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 0.5px solid #555;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.article h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.article p {
+  margin: 0 0 0.85rem;
+}
+
+.article strong {
+  color: #ddd;
+  font-weight: 600;
+}
+
+.article em {
+  color: #ccc;
+}
+
+.article a {
+  display: inline;
+  overflow: visible;
+  text-overflow: unset;
+  color: #ddd;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.article a:hover {
+  color: #fff;
+}
+
+.article ul,
+.article ol {
+  margin: 0 0 0.85rem;
+  padding-left: 1.35rem;
+  color: #ccc;
+}
+
+.article li {
+  margin-bottom: 0.45rem;
+}
+
+.article li:last-child {
+  margin-bottom: 0;
+}
+
+.article hr {
+  margin: 1.75rem 0;
+  border: none;
+  border-top: 0.5px solid #555;
+}
+
+.article blockquote {
+  margin: 0 0 0.85rem;
+  padding-left: 1rem;
+  border-left: 3px solid #555;
+  color: #aaa;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .main {
+    padding: 2.5rem 0 4rem;
+  }
+
+  .article h1 {
+    font-size: 2.25rem;
+  }
+
+  .article h2 {
+    font-size: 1.5rem;
+  }
+}
