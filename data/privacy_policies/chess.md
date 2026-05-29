@@ -99,7 +99,7 @@ If we update this policy, we will revise the "Last Updated" date above. We will 
 
 If you have any questions about this Privacy Policy, please contact us at:
 
-Email: [sj@iappsolution.com](mailto:sj@iappsolution.com)<br/>
+Email: [info@iappsolution.com](mailto:info@iappsolution.com)<br/>
 Website: [https://iappsolution.com](https://iappsolution.com)
 
 ---
