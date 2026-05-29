@@ -1,199 +1,126 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
-.parentContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.detailsContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.infoContainer {
-  color: #ccc;
+.main {
+  padding: 0 0 1.5rem;
+  max-width: 1100px;
   margin: 0 auto;
-  width: 100%;
 }
 
-.infoContentContainer div {
-  margin: 1rem 0;
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
 }
 
 .headingText {
-  margin-top: 1rem;
-  font-family: Pacifico;
+  margin: 0;
+  font-family: Pacifico, cursive;
   font-size: 2rem;
-  border-bottom: 0.5px solid gray;
+  line-height: 1.2;
+  color: #fff;
+  border-bottom: 0.5px solid #555;
+  padding-bottom: 0.35rem;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.aboutText p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #bbb;
+}
+
+.lowerGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skillsList,
+.contactList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .contentListEntry {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
 }
 
 .icon {
-  display: inline;
+  flex-shrink: 0;
   height: 1.5rem;
+  width: 1.5rem;
   object-fit: contain;
-  margin-right: 1rem;
 }
 
-.avatarContainer {
-  display: none;
-}
-
-.arrows {
-  display: none;
-  width: 60px;
-  height: 72px;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  bottom: 20px;
-}
-
-.arrows path {
-  stroke: white;
-  fill: transparent;
-  stroke-width: 3px;
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite;
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.arrows path.a1 {
-  animation-delay: -1s;
-  -webkit-animation-delay: -1s; /* Safari and Chrome */
-}
-
-.arrows path.a2 {
-  animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s; /* Safari and Chrome */
-}
-
-.arrows path.a3 {
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s; /* Safari and Chrome */
-}
-
-@media only screen and (min-width: 500px) {
-  .avatarBackground {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .avatar {
-    width: 6rem;
-    height: 6rem;
-  }
-}
-
-@media only screen and (min-width: 650px) {
-  .avatarBackground {
-    width: 75%;
+@media only screen and (min-width: 640px) {
+  .skillsList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .parentContainer {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .main {
+    padding-bottom: 0;
     min-height: calc(100vh - 5rem);
-    max-width: 1400px;
-    margin: 0 auto;
-    flex-direction: row;
-  }
-
-  .detailsContainer {
-    position: relative;
-    height: 75vh;
-    padding: 0.5rem 0;
-  }
-
-  .topCascadingBar,
-  .bottomCascadingBar {
-    height: 2.25rem;
-    position: absolute;
-    top: 0;
-    background-color: #282828;
-    width: 100%;
-    filter: blur(15px);
-    opacity: 0.9;
-  }
-
-  .arrows {
-    display: unset;
-  }
-
-  .bottomCascadingBar {
-    top: unset;
-    bottom: 0;
-  }
-
-  .infoContainer {
-    padding: 1rem;
-    overflow-y: scroll;
-  }
-
-  .avatarContainer {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+  }
+
+  .page {
+    flex: 1;
+    gap: 1.25rem;
+    margin-top: 0;
     justify-content: center;
-    min-height: calc((100vh - 5rem) / 2);
-    width: 100%;
-    margin: 1rem 0;
   }
 
-  .avatarBackground {
-    opacity: 0.8;
+  .lowerGrid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: start;
   }
 
-  .avatar {
-    width: 7rem;
-    height: 7rem;
-    position: absolute;
-    object-fit: contain;
-    z-index: 100;
+  .skillsList {
+    grid-template-columns: 1fr;
   }
 }
 
-@media only screen and (min-width: 950px) {
-  .avatar {
-    width: 10rem;
-    height: 10rem;
+@media only screen and (min-width: 1024px) {
+  .skillsList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2.5rem;
   }
 }

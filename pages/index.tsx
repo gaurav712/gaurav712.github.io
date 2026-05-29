@@ -14,19 +14,21 @@ const Home = () => {
       </Head>
       <div className={styles.container}>
         <NavBar selectedItem={selectedItem} />
-        <div className={styles.infoContainer}>
-          <div className={styles.avatarContainer}>
-            <img
-              src={"/technologies.svg"}
-              className={styles.avatarBackground}
-              alt=""
-            />
-            <img src={"/image.png"} className={styles.avatar} alt="" />
-          </div>
-          <div className={styles.greetingContainer}>
-            <div className={styles.greeting}>Hello!</div>
-            <div className={styles.greetingSub}>
-              I&apos;m a Software Engineer based in UP, IN
+        <div className={styles.main}>
+          <div className={styles.hero}>
+            <div className={styles.avatarContainer}>
+              <img
+                src="/technologies.svg"
+                className={styles.avatarBackground}
+                alt=""
+              />
+              <img src="/image.png" className={styles.avatar} alt="" />
+            </div>
+            <div className={styles.greetingContainer}>
+              <div className={styles.greeting}>Hello!</div>
+              <div className={styles.greetingSub}>
+                I&apos;m a Software Engineer based in UP, IN
+              </div>
             </div>
           </div>
         </div>
