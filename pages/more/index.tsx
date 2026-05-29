@@ -53,8 +53,8 @@ const More = () => {
         <div className={styles.main}>
           <div className={styles.page}>
             <section className={styles.section}>
-              <h2 className={styles.headingText}>About</h2>
-              <div className={styles.aboutText}>
+              <h2 className={styles.sectionHeading}>About</h2>
+              <div className={styles.sectionBody}>
                 <p>
                   Salutations! I am a seasoned software engineer based in
                   India, presently serving as a frontend developer.
@@ -74,37 +74,41 @@ const More = () => {
               </div>
             </section>
 
-            <div className={styles.lowerGrid}>
+            <div className={styles.sectionsGrid}>
               <section className={styles.section}>
-                <h2 className={styles.headingText}>Skills</h2>
-                <ul className={styles.skillsList}>
-                  {skillEntries.map((skill) => (
-                    <li key={skill.label} className={styles.contentListEntry}>
-                      <img className={styles.icon} src={skill.icon} alt="" />
-                      <span>{skill.label}</span>
-                    </li>
-                  ))}
-                </ul>
+                <h2 className={styles.sectionHeading}>Skills</h2>
+                <div className={styles.sectionBody}>
+                  <ul className={styles.skillsList}>
+                    {skillEntries.map((skill) => (
+                      <li key={skill.label} className={styles.contentListEntry}>
+                        <img className={styles.icon} src={skill.icon} alt="" />
+                        <span>{skill.label}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </section>
 
               <section className={styles.section}>
-                <h2 className={styles.headingText}>Reach me &#64;</h2>
-                <ul className={styles.contactList}>
-                  {contactEntries.map((entry) => (
-                    <li key={entry.href} className={styles.contentListEntry}>
-                      <img className={styles.icon} src={entry.icon} alt="" />
-                      <span>
-                        <a
-                          href={entry.href}
-                          target={entry.external ? "_blank" : undefined}
-                          rel={entry.external ? "noreferrer" : undefined}
-                        >
-                          {entry.label}
-                        </a>
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <h2 className={styles.sectionHeading}>Reach me &#64;</h2>
+                <div className={styles.sectionBody}>
+                  <ul className={styles.contactList}>
+                    {contactEntries.map((entry) => (
+                      <li key={entry.href} className={styles.contentListEntry}>
+                        <img className={styles.icon} src={entry.icon} alt="" />
+                        <span>
+                          <a
+                            href={entry.href}
+                            target={entry.external ? "_blank" : undefined}
+                            rel={entry.external ? "noreferrer" : undefined}
+                          >
+                            {entry.label}
+                          </a>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </section>
             </div>
           </div>
