@@ -21,21 +21,21 @@ const contactEntries = [
     label: "gaurav712@protonmail.com",
   },
   {
-    icon: "/github.svg",
-    href: "https://github.com/gaurav712",
+    icon: "/linkedin.svg",
+    href: "https://www.linkedin.com/in/gaurav712",
     label: "gaurav712",
     external: true,
   },
   {
     icon: "/codeberg.svg",
     href: "https://codeberg.org/gaurav712",
-    label: "gaurav712",
+    label: "https://codeberg.org/gaurav712",
     external: true,
   },
   {
-    icon: "/linkedin.svg",
-    href: "https://www.linkedin.com/in/gaurav712",
-    label: "gaurav712",
+    icon: "/github.svg",
+    href: "https://github.com/gaurav712",
+    label: "https://github.com/gaurav712",
     external: true,
   },
 ];
