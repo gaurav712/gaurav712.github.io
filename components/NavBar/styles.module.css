@@ -9,6 +9,9 @@
 
 .navbar ul a {
   margin: 0.5rem 1rem;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .navbarItem {
