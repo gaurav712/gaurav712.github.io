@@ -56,20 +56,17 @@ const More = () => {
               <h2 className={styles.sectionHeading}>About</h2>
               <div className={styles.sectionBody}>
                 <p>
-                  Salutations! I am a seasoned software engineer based in
-                  India, presently serving as a frontend developer.
+                  I am a software engineer based in India, currently working
+                  as a frontend developer.
                 </p>
                 <p>
-                  Beyond my professional pursuits, I am an ardent learner
-                  exploring new technologies. My love for video games has
-                  endowed me with the ability to approach problems with a
-                  unique approach.
+                  Outside of work, I keep learning new technologies. Playing
+                  video games has shaped how I think about solving problems.
                 </p>
                 <p>
-                  With my years of experience, along with a steadfast
-                  commitment to staying ahead of the curve, I am relentlessly
-                  pursuing novel and challenging projects to sink my teeth
-                  into!
+                  With several years of experience, I stay current with
+                  industry trends and look for challenging projects to grow
+                  with.
                 </p>
               </div>
             </section>
