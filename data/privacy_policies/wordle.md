@@ -1,4 +1,4 @@
-# Wordle
+# Word: Fun Puzzle Game
 
 **Effective Date:** May 31, 2026<br/>
 **Last Updated:** May 31, 2026
@@ -13,7 +13,7 @@ We don't collect anything about you. No accounts. No data. No tracking. No inter
 
 ## 1. Who We Are
 
-We develop and publish the mobile word game _Wordle_. This policy explains what data we handle — which is essentially none.
+We develop and publish the mobile word game _Word: Fun Puzzle Game_. This policy explains what data we handle — which is essentially none.
 
 ---
 
