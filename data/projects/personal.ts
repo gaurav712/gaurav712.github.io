@@ -7,7 +7,7 @@ const projects: IProjectsList = {
       techUsed: ["python"],
       description:
         "Neovim code completion using local LLMs (configured for port 8080 by default).",
-      sourceUrl: "https://github.com/gaurav712/local-ai-completion.nvim",
+      sourceUrl: "https://codeberg.org/gaurav712/local-ai-completion.nvim",
     },
   ],
   "Mar, 2026": [
@@ -17,7 +17,7 @@ const projects: IProjectsList = {
       techUsed: ["c"],
       description:
         "A simple tool to pass gamepad events over WebSockets (remotely connecting a gamepad).",
-      sourceUrl: "https://github.com/gaurav712/coop-bridge",
+      sourceUrl: "https://codeberg.org/gaurav712/coop-bridge",
     },
     {
       name: "wl-stream",
@@ -25,7 +25,7 @@ const projects: IProjectsList = {
       techUsed: ["c"],
       description:
         "Low-latency Wayland display stream over WebRTC.",
-      sourceUrl: "https://github.com/gaurav712/wl-stream",
+      sourceUrl: "https://codeberg.org/gaurav712/wl-stream",
     },
   ],
   "Jan, 2026": [
@@ -33,7 +33,7 @@ const projects: IProjectsList = {
       name: "notwell",
       techUsed: ["c", "sdl"],
       description: "A photo culling application in SDL.",
-      sourceUrl: "https://github.com/gaurav712/notwell",
+      sourceUrl: "https://codeberg.org/gaurav712/notwell",
     },
   ],
   "Dec, 2025": [
@@ -42,21 +42,21 @@ const projects: IProjectsList = {
       techUsed: ["c"],
       description:
         "Markdown editor in Rust (incomplete; renders only).",
-      sourceUrl: "https://github.com/gaurav712/mded-rust",
+      sourceUrl: "https://codeberg.org/gaurav712/mded-rust",
     },
     {
       name: "notification-listener",
       techUsed: ["android", "kotlin"],
       description:
         "An Android application that listens to notification updates.",
-      sourceUrl: "https://github.com/gaurav712/notification-listener",
+      sourceUrl: "https://codeberg.org/gaurav712/notification-listener",
     },
     {
       name: "calculator",
       techUsed: ["c"],
       description:
         "A simple calculator that works like a bad stripped-down Spotlight.",
-      sourceUrl: "https://github.com/gaurav712/calculator",
+      sourceUrl: "https://codeberg.org/gaurav712/calculator",
     },
   ],
   "Nov, 2025": [
@@ -64,14 +64,14 @@ const projects: IProjectsList = {
       name: "monotonic-clock",
       techUsed: ["android", "kotlin"],
       description: "Jetpack Compose widget experiments.",
-      sourceUrl: "https://github.com/gaurav712/monotonic-clock",
+      sourceUrl: "https://codeberg.org/gaurav712/monotonic-clock",
     },
     {
       name: "keypress-listener",
       techUsed: ["c"],
       description:
         "Keypress listener using libinput to implement keybindings.",
-      sourceUrl: "https://github.com/gaurav712/keypress-listener",
+      sourceUrl: "https://codeberg.org/gaurav712/keypress-listener",
     },
     {
       name: "desktop-thingy",
@@ -79,13 +79,13 @@ const projects: IProjectsList = {
       techUsed: ["c", "gtk"],
       description:
         "Draws a bar, desktop background, and a dashboard with day, date and weather using gtk4-layer-shell.",
-      sourceUrl: "https://github.com/gaurav712/desktop-thingy",
+      sourceUrl: "https://codeberg.org/gaurav712/desktop-thingy",
     },
     {
       name: "launcher",
       techUsed: ["c"],
       description: "dmenu-like application launcher.",
-      sourceUrl: "https://github.com/gaurav712/launcher",
+      sourceUrl: "https://codeberg.org/gaurav712/launcher",
     },
   ],
   "Aug, 2024": [
@@ -94,7 +94,7 @@ const projects: IProjectsList = {
       featured: true,
       techUsed: ["android", "kotlin"],
       description: "Minimalist monotone Android icon pack.",
-      sourceUrl: "https://github.com/gaurav712/monotone-icons",
+      sourceUrl: "https://codeberg.org/gaurav712/monotone-icons",
     },
   ],
   "Apr, 2023": [
@@ -104,7 +104,7 @@ const projects: IProjectsList = {
       techUsed: ["react_native", "google_maps"],
       description:
         "A car pooling platform. Share rides along common paths and save costs.",
-      sourceUrl: "https://github.com/gaurav712/CommuteCrew",
+      sourceUrl: "https://codeberg.org/gaurav712/CommuteCrew",
     },
   ],
   "Feb, 2023": [
@@ -122,13 +122,13 @@ const projects: IProjectsList = {
       techUsed: ["react_native", "python", "aws", "google_maps"],
       description:
         "An android application to update markers on a map in real-time as the list is updated in the database. Uses DynamoDB, GatewayAPI, Websockets, and AWS Lambda.",
-      sourceUrl: "https://github.com/gaurav712/DynamoDB-Stream-Changes",
+      sourceUrl: "https://codeberg.org/gaurav712/DynamoDB-Stream-Changes",
     },
     {
       name: "ytmusic-cli",
       techUsed: ["python"],
       description: "Youtube Music frontend in console.",
-      sourceUrl: "https://github.com/gaurav712/ytmusic-cli",
+      sourceUrl: "https://codeberg.org/gaurav712/ytmusic-cli",
     },
   ],
   "Jan, 2023": [
@@ -147,13 +147,13 @@ const projects: IProjectsList = {
       techUsed: ["react_native", "typescript"],
       description:
         "A React Native app using OpenStreetMap's web version disguised as an in-app thingy",
-      sourceUrl: "https://github.com/gaurav712/ReactNativeOpenStreetMaps",
+      sourceUrl: "https://codeberg.org/gaurav712/ReactNativeOpenStreetMaps",
     },
     {
       name: "Kitchen Diary",
       techUsed: ["react_native", "typescript"],
       description: "An application to create and manage a catalogue of recipes",
-      sourceUrl: "https://github.com/gaurav712/Kitchen-Diary",
+      sourceUrl: "https://codeberg.org/gaurav712/Kitchen-Diary",
     },
   ],
   "Aug, 2021": [
@@ -171,7 +171,7 @@ const projects: IProjectsList = {
       techUsed: ["android", "kotlin"],
       description:
         "An app to reserve slots for public custom rooms in battle royales",
-      sourceUrl: "https://github.com/gaurav712/BGMICustoms",
+      sourceUrl: "https://codeberg.org/gaurav712/BGMICustoms",
     },
   ],
   "Apr, 2021": [
@@ -179,14 +179,14 @@ const projects: IProjectsList = {
       name: "wifi-qt",
       techUsed: ["cpp", "qt"],
       description: "Successor to GiGS_Wifi written in Qt5 using C++",
-      sourceUrl: "https://github.com/gaurav712/wifi-qt",
+      sourceUrl: "https://codeberg.org/gaurav712/wifi-qt",
     },
     {
       name: "wlan_toggle_service",
       techUsed: ["c"],
       description:
         "UNIX service to run as super-user to be able to toggle wlan",
-      sourceUrl: "https://github.com/gaurav712/wlan_toggle_service",
+      sourceUrl: "https://codeberg.org/gaurav712/wlan_toggle_service",
     },
   ],
   "Mar, 2021": [
@@ -194,7 +194,7 @@ const projects: IProjectsList = {
       name: "ebook_finder",
       techUsed: ["python", "gtk"],
       description: "to find free ebooks online",
-      sourceUrl: "https://github.com/gaurav712/ebook_finder",
+      sourceUrl: "https://codeberg.org/gaurav712/ebook_finder",
     },
   ],
   "Jan, 2021": [
@@ -202,7 +202,7 @@ const projects: IProjectsList = {
       name: "Sketcher",
       techUsed: ["c", "sdl"],
       description: "tool to convert images to sketch",
-      sourceUrl: "https://github.com/gaurav712/sketcher",
+      sourceUrl: "https://codeberg.org/gaurav712/sketcher",
     },
   ],
   "Nov, 2020": [
@@ -211,13 +211,13 @@ const projects: IProjectsList = {
       techUsed: ["python"],
       description:
         "a python library to search free eBooks online using Library Genesis' database",
-      sourceUrl: "https://github.com/gaurav712/GiGS-eBook",
+      sourceUrl: "https://codeberg.org/gaurav712/GiGS-eBook",
     },
     {
       name: "GiGS Music",
       techUsed: ["android", "kotlin"],
       description: "a material design, simplistic music player for android",
-      sourceUrl: "https://github.com/gaurav712/GiGS-Music",
+      sourceUrl: "https://codeberg.org/gaurav712/GiGS-Music",
     },
   ],
   "Oct, 2020": [
@@ -225,21 +225,21 @@ const projects: IProjectsList = {
       name: "GiGS Wifi",
       techUsed: ["python", "gtk"],
       description: "Graphical frontend to wpa_supplicant",
-      sourceUrl: "https://github.com/gaurav712/GiGS_Wifi",
+      sourceUrl: "https://codeberg.org/gaurav712/GiGS_Wifi",
     },
     {
       name: "meet_auto_admit",
       techUsed: ["javascript"],
       description:
         "Chrome extention to automatically admit people to a Google Meet call",
-      sourceUrl: "https://github.com/gaurav712/meet_auto_admit",
+      sourceUrl: "https://codeberg.org/gaurav712/meet_auto_admit",
     },
     {
       name: "arduino_morse",
       techUsed: ["cpp"],
       description:
         "converts a given string to Morse Code using arduino's inbuilt LED",
-      sourceUrl: "https://github.com/gaurav712/arduino_morse",
+      sourceUrl: "https://codeberg.org/gaurav712/arduino_morse",
     },
   ],
   "Sep, 2020": [
@@ -247,7 +247,7 @@ const projects: IProjectsList = {
       name: "whatsapp_chat_emulation",
       techUsed: ["python", "gtk"],
       description: "emulates whatsapp chat screen from exported chats",
-      sourceUrl: "https://github.com/gaurav712/whatsapp_chat_emulation",
+      sourceUrl: "https://codeberg.org/gaurav712/whatsapp_chat_emulation",
     },
   ],
   "Aug, 2020": [
@@ -255,7 +255,7 @@ const projects: IProjectsList = {
       name: "alsavolcontrol",
       techUsed: ["c"],
       description: "control volume using ALSA",
-      sourceUrl: "https://github.com/gaurav712/alsavolcontrol",
+      sourceUrl: "https://codeberg.org/gaurav712/alsavolcontrol",
     },
   ],
   "Jul, 2019": [
@@ -263,7 +263,7 @@ const projects: IProjectsList = {
       name: "cpufreq",
       techUsed: ["c"],
       description: "utility to set maximum cpu frequency on linux systems",
-      sourceUrl: "https://github.com/gaurav712/cpufreq",
+      sourceUrl: "https://codeberg.org/gaurav712/cpufreq",
     },
   ],
   "Jun, 2019": [
@@ -272,25 +272,25 @@ const projects: IProjectsList = {
       techUsed: ["c"],
       description:
         "simple information tool for linux systems optimised for statusbars in WMs",
-      sourceUrl: "https://github.com/gaurav712/status",
+      sourceUrl: "https://codeberg.org/gaurav712/status",
     },
     {
       name: "brightness",
       techUsed: ["c"],
       description: "utility to control brightness on linux systems",
-      sourceUrl: "https://github.com/gaurav712/brightness",
+      sourceUrl: "https://codeberg.org/gaurav712/brightness",
     },
     {
       name: "list_mountable_stuff",
       techUsed: ["c"],
       description: "Lists devices that can be mounted on linux systems",
-      sourceUrl: "https://github.com/gaurav712/list_mountable_stuff",
+      sourceUrl: "https://codeberg.org/gaurav712/list_mountable_stuff",
     },
     {
       name: "launch",
       techUsed: ["c"],
       description: "an alternative to xdg-open",
-      sourceUrl: "https://github.com/gaurav712/launch",
+      sourceUrl: "https://codeberg.org/gaurav712/launch",
     },
   ],
   "Apr, 2019": [
@@ -299,7 +299,7 @@ const projects: IProjectsList = {
       techUsed: ["c"],
       description:
         "parses *.srt files and spits out dialogues at relevant intervals",
-      sourceUrl: "https://github.com/gaurav712/subtitle_parser",
+      sourceUrl: "https://codeberg.org/gaurav712/subtitle_parser",
     },
   ],
 };
