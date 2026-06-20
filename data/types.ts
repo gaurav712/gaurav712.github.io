@@ -5,11 +5,16 @@ export interface ITechIcons {
   };
 }
 
+export interface IProjectUrl {
+  label: string;
+  url: string;
+}
+
 export interface IProject {
   name: string;
   techUsed: string[];
   description: string;
-  sourceUrl: string;
+  sourceUrl: IProjectUrl[];
   featured?: boolean;
 }
 

@@ -89,3 +89,19 @@ const techIcons: ITechIcons = {
 
 export default techIcons;
 
+const urlIcons: { [key: string]: string } = {
+  codeberg: "/codeberg.svg",
+  github: "/github.svg",
+  apple: "/apple.svg",
+  playstore: "/google.svg",
+  default: "/earth.svg",
+};
+
+export const getUrlIcon = (url: string): string => {
+  if (url.includes("codeberg.org")) return urlIcons.codeberg;
+  if (url.includes("github.com")) return urlIcons.github;
+  if (url.includes("apps.apple.com")) return urlIcons.apple;
+  if (url.includes("play.google.com")) return urlIcons.playstore;
+  return urlIcons.default;
+};
+

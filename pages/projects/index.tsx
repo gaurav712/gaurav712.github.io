@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import NavBar from "../../components/NavBar";
 import Tooltip from "../../components/Tooltip";
 import {
@@ -7,11 +7,9 @@ import {
   getTimelineGroups,
   projectTypes,
 } from "../../data/projects";
-import Icons from "../../data/icons";
+import Icons, { getUrlIcon } from "../../data/icons";
 import { IProject } from "../../data/types";
 import styles from "./styles.module.css";
-
-const hasValidSource = (url: string) => url && url !== "_";
 
 type ProjectCardProps = {
   project: IProject;
@@ -20,9 +18,7 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ project, period, featured }: ProjectCardProps) => (
-  <article
-    className={`${styles.card} ${featured ? styles.cardFeatured : ""}`}
-  >
+  <article className={`${styles.card} ${featured ? styles.cardFeatured : ""}`}>
     <header className={styles.cardHeader}>
       <div className={styles.cardHeading}>
         {featured && <span className={styles.featuredBadge}>Highlight</span>}
@@ -41,25 +37,21 @@ const ProjectCard = ({ project, period, featured }: ProjectCardProps) => (
       className={styles.cardDescription}
       dangerouslySetInnerHTML={{ __html: project.description }}
     />
-    {hasValidSource(project.sourceUrl) && (
+    {project.sourceUrl.length > 0 && (
       <footer className={styles.cardFooter}>
-        <img
-          src={
-            project.sourceUrl.includes("github.com")
-              ? "/github.svg"
-              : "/earth.svg"
-          }
-          className={styles.githubLogo}
-          alt=""
-        />
-        <a
-          target="_blank"
-          rel="noreferrer"
-          className={styles.sourceUrl}
-          href={project.sourceUrl}
-        >
-          {project.sourceUrl}
-        </a>
+        {project.sourceUrl.map(({ label, url }, i) => (
+          <Fragment key={i}>
+            <img src={getUrlIcon(url)} className={styles.githubLogo} alt="" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className={styles.sourceUrl}
+              href={url}
+            >
+              {label}
+            </a>
+          </Fragment>
+        ))}
       </footer>
     )}
   </article>
@@ -73,7 +65,7 @@ const Projects = () => {
 
   const toggleProjectType = () => {
     setActiveTab((current) =>
-      current === projectTypes[0] ? projectTypes[1] : projectTypes[0]
+      current === projectTypes[0] ? projectTypes[1] : projectTypes[0],
     );
   };
 
@@ -173,14 +165,13 @@ const Projects = () => {
                 <div key={group.period} className={styles.timelineGroup}>
                   <div className={styles.timelineRail}>
                     <span className={styles.timelineDot} />
-                    <time className={styles.timelinePeriod}>{group.period}</time>
+                    <time className={styles.timelinePeriod}>
+                      {group.period}
+                    </time>
                   </div>
                   <div className={styles.timelineCards}>
                     {group.items.map((project) => (
-                      <ProjectCard
-                        key={project.name}
-                        project={project}
-                      />
+                      <ProjectCard key={project.name} project={project} />
                     ))}
                   </div>
                 </div>
@@ -194,3 +185,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
