@@ -22,6 +22,6 @@ export const getTimelineGroups = (
   Object.entries(projects[tab])
     .map(([period, items]) => ({
       period,
-      items: items.filter((item) => !item.featured),
+      items,
     }))
     .filter((group) => group.items.length > 0);
