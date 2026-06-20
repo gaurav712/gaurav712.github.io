@@ -6,23 +6,23 @@ const projects: IProjectsList = {
       name: "98",
       techUsed: ["lua"],
       description:
-        "A stripped-down fork of 99 by ThePrimeagen - Neovim plugin.",
+        "A stripped-down fork of neovim plugin 99 by ThePrimeagen",
       sourceUrl: "https://codeberg.org/gaurav712/98",
     },
     {
       name: "launcher",
       techUsed: ["c", "sdl"],
       description:
-        "dmenu-like menu/launcher/fuzzy finder built with SDL3 - efficient, no bloat.",
+        "An efficient, bloat-free dmenu-like menu/launcher/fuzzy-finder built in C & SDL3",
       sourceUrl: "https://codeberg.org/gaurav712/launcher",
     },
   ],
   "May, 2026": [
     {
       name: "local-ai-completion.nvim",
-      techUsed: ["python"],
+      techUsed: ["lua"],
       description:
-        "Neovim code completion using local LLMs (configured for port 8080 by default).",
+        "Neovim code completion using local LLMs",
       sourceUrl: "https://codeberg.org/gaurav712/local-ai-completion.nvim",
     },
   ],
