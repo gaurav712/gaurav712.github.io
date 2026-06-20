@@ -77,6 +77,15 @@ const techIcons: ITechIcons = {
     iconSource: "/go.svg",
     tooltipText: "Golang",
   },
+  nodejs: {
+    iconSource: "/nodejs.svg",
+    tooltipText: "NodeJS",
+  },
+  supabase: {
+    iconSource: "/supabase.svg",
+    tooltipText: "Supabase",
+  },
 };
 
 export default techIcons;
+
