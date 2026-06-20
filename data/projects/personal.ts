@@ -1,6 +1,22 @@
 import { IProjectsList } from "../types";
 
 const projects: IProjectsList = {
+  "Jun, 2026": [
+    {
+      name: "98",
+      techUsed: ["lua"],
+      description:
+        "A stripped-down fork of 99 by ThePrimeagen - Neovim plugin.",
+      sourceUrl: "https://codeberg.org/gaurav712/98",
+    },
+    {
+      name: "launcher",
+      techUsed: ["c", "sdl"],
+      description:
+        "dmenu-like menu/launcher/fuzzy finder built with SDL3 - efficient, no bloat.",
+      sourceUrl: "https://codeberg.org/gaurav712/launcher",
+    },
+  ],
   "May, 2026": [
     {
       name: "local-ai-completion.nvim",
