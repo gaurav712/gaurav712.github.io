@@ -32,6 +32,10 @@ const Home = () => {
               <div className={styles.greetingSub}>
                 I&apos;m a Software Engineer based in UP, IN
               </div>
+              <div className={styles.buttonsContainer}>
+                <a href="/more" className={styles.btn}>More about me</a>
+                <a href="/projects" className={styles.btn}>Projects</a>
+              </div>
             </div>
           </div>
         </div>

@@ -48,6 +48,33 @@
   color: #bbb;
 }
 
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.55rem 1.4rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ddd;
+  font-size: 0.9rem;
+  letter-spacing: 0.025em;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.btn:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
 .avatarContainer {
   display: grid;
   place-items: center;
@@ -120,6 +147,10 @@
     font-size: 1.5rem;
     color: #aaa;
     max-width: 28rem;
+  }
+
+  .buttonsContainer {
+    justify-content: flex-start;
   }
 
   .avatarContainer {
