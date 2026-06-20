@@ -94,7 +94,7 @@ const More = () => {
               <div className={styles.sectionBody}>
                 <p>
                   I am a software engineer based in India, currently working
-                  as a frontend developer.
+                  as a full-stack developer.
                 </p>
                 <p>
                   Outside of work, I keep learning new technologies. Playing
