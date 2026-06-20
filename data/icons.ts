@@ -73,6 +73,10 @@ const techIcons: ITechIcons = {
     iconSource: "/lua.svg",
     tooltipText: "Lua",
   },
+  go: {
+    iconSource: "/go.svg",
+    tooltipText: "Golang",
+  },
 };
 
 export default techIcons;

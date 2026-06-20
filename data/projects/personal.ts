@@ -5,12 +5,12 @@ const projects: IProjectsList = {
     {
       name: "98",
       techUsed: ["lua"],
-      description:
-        "A stripped-down fork of neovim plugin 99 by ThePrimeagen",
+      description: "A stripped-down fork of neovim plugin 99 by ThePrimeagen",
       sourceUrl: "https://codeberg.org/gaurav712/98",
     },
     {
       name: "launcher",
+      featured: true,
       techUsed: ["c", "sdl"],
       description:
         "An efficient, bloat-free dmenu-like menu/launcher/fuzzy-finder built in C & SDL3",
@@ -19,14 +19,20 @@ const projects: IProjectsList = {
   ],
   "May, 2026": [
     {
+      name: "Chess: Be a Grandmaster",
+      featured: true,
+      techUsed: ["go", "react_native"],
+      description:
+        "Multiplayer chess game. Play online with friends. Supports local pass n play as well. Uses React Native for the app and golang in the backend",
+      sourceUrl:
+        "https://play.google.com/store/apps/details?id=io.github.gaurav712.chessmobile",
+    },
+    {
       name: "local-ai-completion.nvim",
       techUsed: ["lua"],
-      description:
-        "Neovim code completion using local LLMs",
+      description: "Neovim code completion using local LLMs",
       sourceUrl: "https://codeberg.org/gaurav712/local-ai-completion.nvim",
     },
-  ],
-  "Mar, 2026": [
     {
       name: "Coop Bridge",
       featured: true,
@@ -39,8 +45,7 @@ const projects: IProjectsList = {
       name: "wl-stream",
       featured: true,
       techUsed: ["c"],
-      description:
-        "Low-latency Wayland display stream over WebRTC.",
+      description: "Low-latency Wayland display stream over WebRTC.",
       sourceUrl: "https://codeberg.org/gaurav712/wl-stream",
     },
   ],
@@ -56,8 +61,7 @@ const projects: IProjectsList = {
     {
       name: "mded-rust",
       techUsed: ["c"],
-      description:
-        "Markdown editor in Rust (incomplete; renders only).",
+      description: "Markdown editor in Rust (incomplete; renders only).",
       sourceUrl: "https://codeberg.org/gaurav712/mded-rust",
     },
     {
@@ -85,13 +89,12 @@ const projects: IProjectsList = {
     {
       name: "keypress-listener",
       techUsed: ["c"],
-      description:
-        "Keypress listener using libinput to implement keybindings.",
+      description: "Keypress listener using libinput to implement keybindings.",
       sourceUrl: "https://codeberg.org/gaurav712/keypress-listener",
     },
     {
-      name: "desktop-thingy",
       featured: true,
+      name: "desktop-thingy",
       techUsed: ["c", "gtk"],
       description:
         "Draws a bar, desktop background, and a dashboard with day, date and weather using gtk4-layer-shell.",
@@ -107,7 +110,6 @@ const projects: IProjectsList = {
   "Aug, 2024": [
     {
       name: "monotone-icons",
-      featured: true,
       techUsed: ["android", "kotlin"],
       description: "Minimalist monotone Android icon pack.",
       sourceUrl: "https://codeberg.org/gaurav712/monotone-icons",
@@ -116,7 +118,6 @@ const projects: IProjectsList = {
   "Apr, 2023": [
     {
       name: "Commute Crew",
-      featured: true,
       techUsed: ["react_native", "google_maps"],
       description:
         "A car pooling platform. Share rides along common paths and save costs.",
@@ -134,7 +135,6 @@ const projects: IProjectsList = {
     },
     {
       name: "DynamoDB-Stream-Changes",
-      featured: true,
       techUsed: ["react_native", "python", "aws", "google_maps"],
       description:
         "An android application to update markers on a map in real-time as the list is updated in the database. Uses DynamoDB, GatewayAPI, Websockets, and AWS Lambda.",
@@ -150,7 +150,6 @@ const projects: IProjectsList = {
   "Jan, 2023": [
     {
       name: "AKTU Exam Preparation",
-      featured: true,
       techUsed: ["nextjs", "typescript"],
       description:
         "A website to help AKTU students to prepare for exams, providing them with concise guides on subjects.",
@@ -321,3 +320,4 @@ const projects: IProjectsList = {
 };
 
 export default projects;
+
