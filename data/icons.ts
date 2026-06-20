@@ -69,6 +69,10 @@ const techIcons: ITechIcons = {
     iconSource: "/firebase.svg",
     tooltipText: "Firebase",
   },
+  lua: {
+    iconSource: "/lua.svg",
+    tooltipText: "Lua",
+  },
 };
 
 export default techIcons;
