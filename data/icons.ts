@@ -85,6 +85,10 @@ const techIcons: ITechIcons = {
     iconSource: "/supabase.svg",
     tooltipText: "Supabase",
   },
+  raylib: {
+    iconSource: "/raylib.svg",
+    tooltipText: "raylib",
+  },
 };
 
 export default techIcons;

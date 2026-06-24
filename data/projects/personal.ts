@@ -3,6 +3,18 @@ import { IProjectsList } from "../types";
 const projects: IProjectsList = {
   "Jun, 2026": [
     {
+      name: "pong-raylib",
+      techUsed: ["c", "raylib"],
+      description:
+        "A classic Pong game built in C using raylib, with gamepad support.",
+      sourceUrl: [
+        {
+          label: "View on Codeberg",
+          url: "https://codeberg.org/gaurav712/pong-raylib",
+        },
+      ],
+    },
+    {
       name: "98",
       techUsed: ["lua"],
       description: "A stripped-down fork of neovim plugin 99 by ThePrimeagen",
