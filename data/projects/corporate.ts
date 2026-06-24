@@ -41,6 +41,13 @@ const projects: IProjectsList = {
   ],
   "Jan, 2026": [
     {
+      name: "Attendance",
+      techUsed: ["react_native", "nodejs"],
+      description:
+        "An attendance app record attendance for an organisation. One can view archives, modify, export records.",
+      sourceUrl: [],
+    },
+    {
       name: "AI, Choose for ME!",
       techUsed: ["react_native", "supabase"],
       description:
