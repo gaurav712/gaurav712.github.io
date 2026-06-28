@@ -3,6 +3,19 @@ import { IProjectsList } from "../types";
 const projects: IProjectsList = {
   "Jun, 2026": [
     {
+      name: "mangobar",
+      featured: true,
+      techUsed: ["c", "sdl"],
+      description:
+        "A minimal status bar in C & SDL3 for wlroots-based compositors. Because waybar is bloated",
+      sourceUrl: [
+        {
+          label: "View on Codeberg",
+          url: "https://codeberg.org/gaurav712/mangobar",
+        },
+      ],
+    },
+    {
       name: "pong-raylib",
       techUsed: ["c", "raylib"],
       description:
@@ -161,7 +174,6 @@ const projects: IProjectsList = {
       ],
     },
     {
-      featured: true,
       name: "desktop-thingy",
       techUsed: ["c", "gtk"],
       description:
