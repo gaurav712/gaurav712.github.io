@@ -3,6 +3,14 @@ import { IProjectsList } from "../types";
 const projects: IProjectsList = {
   "Jun, 2026": [
     {
+      name: "dumb-soccer",
+      featured: true,
+      techUsed: ["c", "raylib"],
+      description:
+        "A simple 2D multiplayer (couch or remote) soccer game built in C with raylib. Still in progress.",
+      sourceUrl: [{ label: "View Details", url: "/dumb-soccer/" }],
+    },
+    {
       name: "mangobar",
       featured: true,
       techUsed: ["c", "sdl"],
