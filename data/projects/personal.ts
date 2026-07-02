@@ -124,7 +124,7 @@ const projects: IProjectsList = {
   "Dec, 2025": [
     {
       name: "mded-rust",
-      techUsed: ["c"],
+      techUsed: ["rust"],
       description: "Markdown editor in Rust (incomplete; renders only).",
       sourceUrl: [
         {

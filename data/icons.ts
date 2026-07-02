@@ -77,6 +77,10 @@ const techIcons: ITechIcons = {
     iconSource: "/go.svg",
     tooltipText: "Golang",
   },
+  rust: {
+    iconSource: "/rust.svg",
+    tooltipText: "Rust",
+  },
   nodejs: {
     iconSource: "/nodejs.svg",
     tooltipText: "NodeJS",
