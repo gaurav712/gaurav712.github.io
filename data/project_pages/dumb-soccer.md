@@ -4,7 +4,7 @@
 
 ---
 
-![Dumb Soccer](/screenshots/dumb_soccer.png)
+<!-- screenshots -->
 
 ## Overview
 

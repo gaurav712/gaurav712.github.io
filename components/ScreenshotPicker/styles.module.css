@@ -1,0 +1,48 @@
+.root {
+  margin: 1.5rem 0;
+}
+
+.mainImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 0.5px solid #555;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.thumbnail {
+  flex: 0 0 auto;
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  border-radius: 0.35rem;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.thumbnailImage {
+  display: block;
+  width: 4.5rem;
+  height: auto;
+  border: 2px solid transparent;
+  border-radius: 0.35rem;
+  opacity: 0.65;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.thumbnail:hover .thumbnailImage:not(.thumbnailImageSelected) {
+  opacity: 0.9;
+}
+
+.thumbnailImageSelected {
+  border-color: #ddd;
+  opacity: 1;
+}
