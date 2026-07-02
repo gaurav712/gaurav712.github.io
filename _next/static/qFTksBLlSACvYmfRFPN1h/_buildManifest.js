@@ -9,13 +9,13 @@ self.__BUILD_MANIFEST = {
     "static/chunks/0gq44zvi4-7mn.js"
   ],
   "/dumb-soccer": [
-    "static/chunks/0y9cd8pe565ys.js"
+    "static/chunks/02-6f.8rv6~v5.js"
   ],
   "/more": [
     "static/chunks/0jr_93ze71yp1.js"
   ],
   "/privacy-policy": [
-    "static/chunks/15gmy3txwhptn.js"
+    "static/chunks/00jncstqrobdk.js"
   ],
   "/projects": [
     "static/chunks/01drnxrk7ynj9.js"
