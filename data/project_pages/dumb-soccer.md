@@ -54,5 +54,4 @@ Project is still in progress. Current focus areas:
 - Refining the ball physics and collisions.
 - Backend latency and minimal back and forth requests.
 - Configurable controls.
-- Scoreboard, match timer, and a proper menu.
 
