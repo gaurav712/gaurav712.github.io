@@ -69,6 +69,10 @@ const projects: IProjectsList = {
           label: "View on Google Play",
           url: "https://play.google.com/store/apps/details?id=io.github.gaurav712.chessmobile",
         },
+        {
+          label: "View on App Store",
+          url: "https://apps.apple.com/us/app/chess-be-a-grandmaster/id6774854046",
+        },
       ],
     },
     {
